@@ -2,7 +2,9 @@
 
 ### Minetest mod that brings More creeps and weirdoes back to life. #####
 
-###### Links: [blendmodels](https://github.com/hy8wGWme/More-creeps-and-weirdoes-blender-models) 
+###### depends on default & [mobs redo](https://github.com/tenplus1/mobs_redo)
+
+#### Links [blendmodels](https://github.com/hy8wGWme/More-creeps-and-weirdoes-blender-models) 
 
 #### Credits [origin](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1272354-1-2-5-morecreeps-weirdos-v2-62-slot-machines-old) , [website](http://morecreeps.com/) & [wiki](http://morecreepsandweirdos.wikia.com/wiki/MoreCreeps_and_Weirdos_Wiki)
 
