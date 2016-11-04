@@ -35,6 +35,11 @@ minetest.register_craftitem(":amcaw:gun", {
 	inventory_image = "amcaw_gun.png",
 })
 
+minetest.register_craftitem(":amcaw:super_baby_food", {
+	description = "super baby food",
+	inventory_image = "amcaw_super_baby_food.png",
+})
+
 minetest.register_craftitem(":amcaw:raygun", {
 	description = "RayGun",
 	inventory_image = "amcaw_raygun.png",

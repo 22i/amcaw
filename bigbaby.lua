@@ -6,7 +6,11 @@ mobs:register_mob("amcaw:aaabigbaby", {
 	hp_min = 12,
 	hp_max = 35,
 	armor = 150,
-	collisionbox = {-0.25, -0.01, -0.3, 0.25, 1.75, 0.3},
+	--in minetest press f5 to see where you are looking at
+    --then put these wool collor nodes on the ground in direction
+    --of north/east/west... to make colisionbox editing easier
+    --#1west-pink/#2down/#3south-blue/#4east-red/#5up/#6north-yelow
+    collisionbox = {-2, -0.01, -2, 2, 2.91, 2}, 
 	visual = "mesh",
 	mesh = "amcaw_baby.b3d",
 	textures = {
@@ -16,18 +20,21 @@ mobs:register_mob("amcaw:aaabigbaby", {
 	rotate = -180,
 	makes_footstep_sound = true,
 	sounds = {
-		random = "mobs_zombie.1",
-		damage = "mobs_zombie_hit",
-		attack = "mobs_zombie.3",
-		death = "mobs_zombie_death",
+		random = "amcaw_bigbaby1",
+        random = "amcaw_bigbaby2",
+        random = "amcaw_bigbaby3",
+        random = "amcaw_bigbaby4",
+        --only plays bigbaby4? and only after you hit it
+		damage = "amcaw_bigbabyhurt1",
 	},
 	walk_velocity = 1,
 	run_velocity = 1.5,
 	jump = true,
 	floats = 0,
 	view_range = 10,
+    --superbabyfood should be a bit rare maybe 1 every two kills
 	drops = {
-		{name = "default:diamond",
+		{name = "amcaw:super_baby_food",
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
