@@ -5,8 +5,11 @@ local path = minetest.get_modpath("amcaw")
 -- items
 dofile(path .. "/itemss.lua")
 
+-- creeps
+dofile(path .. "/creeps.lua")
 
 -- good creeps
+--[[
 dofile(path .. "/loliman.lua")
 dofile(path .. "/preacher.lua")
 dofile(path .. "/army_guy.lua")
@@ -60,6 +63,6 @@ dofile(path .. "/castle_king.lua")
 dofile(path .. "/ragingbull.lua")
 dofile(path .. "/castleguard.lua")
 
-
+--]]
 
 
