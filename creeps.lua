@@ -423,7 +423,7 @@ mobs:register_mob("amcaw:aaacamel", {
 --mobs:register_spawn("amcaw:aaacamel", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaacamel",
-       nodes = {"default:dirt_with_grass"},
+       nodes = {"default:sand"},
        interval = 30,
        min_light = 10,
        chance = 15000,
@@ -484,9 +484,12 @@ mobs:register_mob("amcaw:aaacastle_king", {
 	},
 })
 
+--castle king spawns on top of castle
+
 --name, nodes, neighbours, minlight, maxlight, interval, chance, active_object_count, min_height, max_height
 --mobs:register_spawn("amcaw:aaacastle_king", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
+--[[
 mobs:spawn({name = "amcaw:aaacastle_king",
        nodes = {"default:dirt_with_grass"},
        interval = 30,
@@ -496,6 +499,7 @@ mobs:spawn({name = "amcaw:aaacastle_king",
        min_height = 0,
        day_toggle = true,
     })
+--]]
 
 mobs:register_egg("amcaw:aaacastle_king", "castle_king", "amcaw_castle_king_inv.png", 0)
 
@@ -545,9 +549,12 @@ mobs:register_mob("amcaw:aaacastle_critter", {
 	},
 })
 
+--Castle critter spawns inside the castle
+
 --name, nodes, neighbours, minlight, maxlight, interval, chance, active_object_count, min_height, max_height
 --mobs:register_spawn("amcaw:aaacastle_critter", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
+--[[
 mobs:spawn({name = "amcaw:aaacastle_critter",
        nodes = {"default:dirt_with_grass"},
        interval = 30,
@@ -557,6 +564,7 @@ mobs:spawn({name = "amcaw:aaacastle_critter",
        min_height = 0,
        day_toggle = true,
     })
+--]]
 
 mobs:register_egg("amcaw:aaacastle_critter", "castle_critter", "amcaw_castle_critter_inv.png", 0)
 
@@ -606,9 +614,12 @@ mobs:register_mob("amcaw:aaacastle_guard", {
 	},
 })
 
+--Castle guard spawns inside castle
+
 --name, nodes, neighbours, minlight, maxlight, interval, chance, active_object_count, min_height, max_height
 --mobs:register_spawn("amcaw:aaacastle_guard", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
+--[[
 mobs:spawn({name = "amcaw:aaacastle_guard",
        nodes = {"default:dirt_with_grass"},
        interval = 30,
@@ -618,6 +629,7 @@ mobs:spawn({name = "amcaw:aaacastle_guard",
        min_height = 0,
        day_toggle = true,
     })
+--]]
 
 mobs:register_egg("amcaw:aaacastle_guard", "castle guard", "amcaw_castleguard_inv.png", 0)
 
@@ -794,7 +806,7 @@ mobs:register_mob("amcaw:aaadesertlizard", {
 --mobs:register_spawn("amcaw:aaadesertlizard", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaadesertlizard",
-       nodes = {"default:dirt_with_grass"},
+       nodes = {"default:sand"},
        interval = 30,
        min_light = 10,
        chance = 32000,
@@ -1403,7 +1415,7 @@ mobs:register_mob("amcaw:aaahippo", {
 --mobs:register_spawn("amcaw:aaahippo", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaahippo",
-       nodes = {"default:dirt_with_grass"},
+       nodes = {"default:sand"},
        interval = 30,
        min_light = 10,
        chance = 32000,
@@ -1707,7 +1719,7 @@ mobs:register_mob("amcaw:aajockey", {
 --mobs:register_spawn("amcaw:aajockey", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aajockey",
-       nodes = {"default:dirt_with_grass"},
+       nodes = {"default:sand"},
        interval = 30,
        min_light = 10,
        chance = 32000,
@@ -2011,7 +2023,7 @@ mobs:register_mob("amcaw:aamummy", {
 --mobs:register_spawn("amcaw:aamummy", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aamummy",
-       nodes = {"default:dirt_with_grass"},
+       nodes = {"default:sand"},
        interval = 30,
        min_light = 10,
        chance = 32000,
@@ -2071,7 +2083,7 @@ mobs:register_mob("amcaw:aanonswimmer", {
 --mobs:register_spawn("amcaw:aanonswimmer", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aanonswimmer",
-       nodes = {"default:dirt_with_grass"},
+       nodes = {"default:sand"},
        interval = 30,
        min_light = 10,
        chance = 32000,
@@ -2371,9 +2383,12 @@ mobs:register_mob("amcaw:aaprisoner", {
 	},
 })
 
+--prisoner spawns only in prison
+
 --name, nodes, neighbours, minlight, maxlight, interval, chance, active_object_count, min_height, max_height
 --mobs:register_spawn("amcaw:aaprisoner", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
+--[[
 mobs:spawn({name = "amcaw:aaprisoner",
        nodes = {"default:dirt_with_grass"},
        interval = 30,
@@ -2383,6 +2398,7 @@ mobs:spawn({name = "amcaw:aaprisoner",
        min_height = 0,
        day_toggle = true,
     })
+--]]
 
 mobs:register_egg("amcaw:aaprisoner", "prisoner", "amcaw_prisoner_inv.png", 0)
 
@@ -2496,6 +2512,7 @@ mobs:register_mob("amcaw:aaaratman", {
 --name, nodes, neighbours, minlight, maxlight, interval, chance, active_object_count, min_height, max_height
 --mobs:register_spawn("amcaw:aaaratman", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
+--[[
 mobs:spawn({name = "amcaw:aaaratman",
        nodes = {"default:dirt_with_grass"},
        interval = 30,
@@ -2505,7 +2522,8 @@ mobs:spawn({name = "amcaw:aaaratman",
        min_height = 0,
        day_toggle = true,
     })
-
+--]]
+   
 mobs:register_egg("amcaw:aaaratman", "ratman", "amcaw_ratman_inv.png", 0)
 
 --################### ROBOTTED
@@ -2680,7 +2698,7 @@ mobs:register_mob("amcaw:aaarocketgirafe", {
 --mobs:register_spawn("amcaw:aaarocketgirafe", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaarocketgirafe",
-       nodes = {"default:dirt_with_grass"},
+       nodes = {"default:sand"},
        interval = 30,
        min_light = 10,
        chance = 32000,
@@ -2863,7 +2881,7 @@ mobs:register_mob("amcaw:aaasnowdevil", {
 --mobs:register_spawn("amcaw:aaasnowdevil", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaasnowdevil",
-       nodes = {"default:dirt_with_grass"},
+       nodes = {"default:dirt_with_snow"},
        interval = 30,
        min_light = 10,
        chance = 32000,
@@ -2984,7 +3002,7 @@ mobs:register_mob("amcaw:aaazebra", {
 --mobs:register_spawn("amcaw:aaazebra", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaazebra",
-       nodes = {"default:dirt_with_grass"},
+       nodes = {"default:sand"},
        interval = 30,
        min_light = 10,
        chance = 32000,
