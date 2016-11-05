@@ -249,11 +249,6 @@ mobs:register_mob("amcaw:aaabubblescum", {
 	textures = {
 		{"amcaw_bubblescum.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -365,11 +360,6 @@ mobs:register_mob("amcaw:aaacamel", {
 	textures = {
 		{"amcaw_camel.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -543,11 +533,6 @@ mobs:register_mob("amcaw:aaacastle_guard", {
 	textures = {
 		{"amcaw_castleguard1.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -604,11 +589,6 @@ mobs:register_mob("amcaw:aaacavelady", {
 	textures = {
 		{"amcaw_cavelady.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=6, y=6},
 	makes_footstep_sound = true,
 	sounds = {
@@ -665,11 +645,6 @@ mobs:register_mob("amcaw:aaacaveman", {
 	textures = {
 		{"amcaw_caveman.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=6, y=6},
 	makes_footstep_sound = true,
 	sounds = {
@@ -727,11 +702,6 @@ mobs:register_mob("amcaw:aaadesertlizard", {
 	textures = {
 		{"amcaw_desertlizard.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=4, y=4},
 	makes_footstep_sound = true,
 	sounds = {
@@ -788,11 +758,6 @@ mobs:register_mob("amcaw:aaadigibug", {
 	textures = {
 		{"amcaw_digibug.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -849,11 +814,6 @@ mobs:register_mob("amcaw:aaadiscomole", {
 	textures = {
 		{"amcaw_discomole.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=4, y=4},
 	makes_footstep_sound = true,
 	sounds = {
@@ -960,11 +920,6 @@ mobs:register_mob("amcaw:aaaflobmothership", {
 	textures = {
 		{"amcaw_flobmothership.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=8, y=8},
 	makes_footstep_sound = true,
 	sounds = {
@@ -1118,11 +1073,6 @@ mobs:register_mob("amcaw:aaagoogoat", {
 	textures = {
 		{"amcaw_googoat.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -1174,11 +1124,6 @@ mobs:register_mob("amcaw:aaagrowbotgregg", {
 	textures = {
 		{"amcaw_growbotgregg.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -1230,11 +1175,6 @@ mobs:register_mob("amcaw:aaaguineapig", {
 	textures = {
 		{"amcaw_guineapig.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=3, y=3},
 	makes_footstep_sound = true,
 	sounds = {
@@ -1286,11 +1226,6 @@ mobs:register_mob("amcaw:aaahippo", {
 	textures = {
 		{"amcaw_hippo.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=8, y=8},
 	makes_footstep_sound = true,
 	sounds = {
@@ -1393,11 +1328,6 @@ mobs:register_mob("amcaw:aaahotdog", {
 	textures = {
 		{"amcaw_hotdog.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=3, y=3},
 	makes_footstep_sound = true,
 	sounds = {
@@ -1956,11 +1886,6 @@ mobs:register_mob("amcaw:aaaponie", {
 	textures = {
 		{"amcaw_ponie.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -2164,11 +2089,6 @@ mobs:register_mob("amcaw:aaaragingbull", {
 	textures = {
 		{"amcaw_ragingbull.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=8, y=8},
 	makes_footstep_sound = true,
 	sounds = {
@@ -2271,11 +2191,6 @@ mobs:register_mob("amcaw:aaarobotted", {
 	textures = {
 		{"amcaw_robotted.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=7, y=7},
 	makes_footstep_sound = true,
 	sounds = {
@@ -2327,11 +2242,6 @@ mobs:register_mob("amcaw:aaarobottod", {
 	textures = {
 		{"amcaw_robottod.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=7, y=7},
 	makes_footstep_sound = true,
 	sounds = {
@@ -2383,11 +2293,6 @@ mobs:register_mob("amcaw:aaarocketgirafe", {
 	textures = {
 		{"amcaw_rocketgirafe.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -2439,11 +2344,6 @@ mobs:register_mob("amcaw:aaarockmonster", {
 	textures = {
 		{"amcaw_rockmonster.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -2495,11 +2395,6 @@ mobs:register_mob("amcaw:aaasneaky_sal", {
 	textures = {
 		{"amcaw_sneaky_sal.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=8, y=8},
 	makes_footstep_sound = true,
 	sounds = {
@@ -2551,11 +2446,6 @@ mobs:register_mob("amcaw:aaasnowdevil", {
 	textures = {
 		{"amcaw_snowdevil.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=4, y=4},
 	makes_footstep_sound = true,
 	sounds = {
@@ -2657,11 +2547,6 @@ mobs:register_mob("amcaw:aaazebra", {
 	textures = {
 		{"amcaw_zebra.png"},
 	},
---[[	textures = {{"amobs_more_creeps_castle_king.png",
-			"3d_armor_trans.png",
-				minetest.registered_items["default:diamond"].inventory_image,
-			}},
---]]
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
