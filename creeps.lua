@@ -47,8 +47,13 @@ mobs:register_mob("amcaw:aarmy_guy", {
 --mobs:register_spawn("amcaw:aarmy_guy", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aarmy_guy",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aarmy_guy", "army guy", "amcaw_army_guy_inv.png", 0)
@@ -110,8 +115,13 @@ mobs:register_mob("amcaw:aaabigbaby", {
 --mobs:register_spawn("amcaw:aaabigbaby", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaabigbaby",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaabigbaby", "bigbaby", "amcaw_bigbaby_inv.png", 0)
@@ -165,8 +175,13 @@ mobs:register_mob("amcaw:aablacksoul", {
 --mobs:register_spawn("amcaw:aablacksoul", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aablacksoul",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aablacksoul", "blacksoul", "amcaw_blacksoul_inv.png", 0)
@@ -226,8 +241,13 @@ mobs:register_mob("amcaw:aaablorp", {
 --mobs:register_spawn("amcaw:aaablorp", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaablorp",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaablorp", "blorp", "amcaw_blorp_inv.png", 0)
@@ -282,8 +302,13 @@ mobs:register_mob("amcaw:aaabubblescum", {
 --mobs:register_spawn("amcaw:aaabubblescum", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaabubblescum",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 15000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaabubblescum", "bubblescum", "amcaw_bubblescum_inv.png", 0)
@@ -337,8 +362,13 @@ mobs:register_mob("amcaw:aabum", {
 --mobs:register_spawn("amcaw:aabum", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aabum",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aabum", "bum", "amcaw_bum_inv.png", 0)
@@ -393,8 +423,12 @@ mobs:register_mob("amcaw:aaacamel", {
 --mobs:register_spawn("amcaw:aaacamel", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaacamel",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 15000,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaacamel", "camel", "amcaw_camel_inv.png", 0)
@@ -454,8 +488,13 @@ mobs:register_mob("amcaw:aaacastle_king", {
 --mobs:register_spawn("amcaw:aaacastle_king", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaacastle_king",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaacastle_king", "castle_king", "amcaw_castle_king_inv.png", 0)
@@ -510,8 +549,13 @@ mobs:register_mob("amcaw:aaacastle_critter", {
 --mobs:register_spawn("amcaw:aaacastle_critter", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaacastle_critter",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaacastle_critter", "castle_critter", "amcaw_castle_critter_inv.png", 0)
@@ -566,8 +610,13 @@ mobs:register_mob("amcaw:aaacastle_guard", {
 --mobs:register_spawn("amcaw:aaacastle_guard", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaacastle_guard",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaacastle_guard", "castle guard", "amcaw_castleguard_inv.png", 0)
@@ -622,8 +671,13 @@ mobs:register_mob("amcaw:aaacavelady", {
 --mobs:register_spawn("amcaw:aaacavelady", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaacavelady",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaacavelady", "cavelady", "amcaw_cavelady_inv.png", 0)
@@ -678,8 +732,13 @@ mobs:register_mob("amcaw:aaacaveman", {
 --mobs:register_spawn("amcaw:aaacaveman", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaacaveman",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 
@@ -735,8 +794,13 @@ mobs:register_mob("amcaw:aaadesertlizard", {
 --mobs:register_spawn("amcaw:aaadesertlizard", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaadesertlizard",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaadesertlizard", "desertlizard", "amcaw_desertlizard_inv.png", 0)
@@ -791,8 +855,13 @@ mobs:register_mob("amcaw:aaadigibug", {
 --mobs:register_spawn("amcaw:aaadigibug", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaadigibug",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaadigibug", "digibug", "amcaw_digibug_inv.png", 0)
@@ -847,8 +916,13 @@ mobs:register_mob("amcaw:aaadiscomole", {
 --mobs:register_spawn("amcaw:aaadiscomole", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaadiscomole",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaadiscomole", "discomole", "amcaw_discomole_inv.png", 0)
@@ -902,8 +976,13 @@ mobs:register_mob("amcaw:aaevilscientist", {
 --mobs:register_spawn("amcaw:aaevilscientist", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaevilscientist",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaevilscientist", "evilscientist", "amcaw_evilscience_inv.png", 0)
@@ -958,8 +1037,13 @@ mobs:register_mob("amcaw:aaaflobmothership", {
 --mobs:register_spawn("amcaw:aaaflobmothership", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaaflobmothership",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaaflobmothership", "flobmothership", "amcaw_flobmothership_inv.png", 0)
@@ -1014,8 +1098,13 @@ mobs:register_mob("amcaw:aaafloob", {
 --mobs:register_spawn("amcaw:aaafloob", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaafloob",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaafloob", "floob", "amcaw_a_floob_inv.png", 0)
@@ -1070,8 +1159,13 @@ mobs:register_mob("amcaw:aaag", {
 --mobs:register_spawn("amcaw:aaag", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaag",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaag", "g", "amcaw_g_inv.png", 0)
@@ -1126,8 +1220,13 @@ mobs:register_mob("amcaw:aaagoogoat", {
 --mobs:register_spawn("amcaw:aaagoogoat", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaagoogoat",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaagoogoat", "googoat", "amcaw_googoat_inv.png", 0)
@@ -1182,8 +1281,13 @@ mobs:register_mob("amcaw:aaagrowbotgregg", {
 --mobs:register_spawn("amcaw:aaagrowbotgregg", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaagrowbotgregg",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaagrowbotgregg", "growbotgregg", "amcaw_growbotgregg_inv.png", 0)
@@ -1238,8 +1342,13 @@ mobs:register_mob("amcaw:aaaguineapig", {
 --mobs:register_spawn("amcaw:aaaguineapig", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaaguineapig",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaaguineapig", "guineapig", "amcaw_guineapig_inv.png", 0)
@@ -1294,8 +1403,13 @@ mobs:register_mob("amcaw:aaahippo", {
 --mobs:register_spawn("amcaw:aaahippo", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaahippo",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaahippo", "hippo", "amcaw_hippo_inv.png", 0)
@@ -1350,8 +1464,13 @@ mobs:register_mob("amcaw:aaahorsehead", {
 --mobs:register_spawn("amcaw:aaahorsehead", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaahorsehead",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaahorsehead", "horsehead", "amcaw_horsehead_inv.png", 0)
@@ -1406,8 +1525,13 @@ mobs:register_mob("amcaw:aaahotdog", {
 --mobs:register_spawn("amcaw:aaahotdog", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaahotdog",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaahotdog", "hotdog", "amcaw_hotdog_inv.png", 0)
@@ -1462,8 +1586,13 @@ mobs:register_mob("amcaw:aaahunchback", {
 --mobs:register_spawn("amcaw:aaahunchback", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaahunchback",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaahunchback", "hunchback", "amcaw_hunchback_inv.png", 0)
@@ -1517,8 +1646,13 @@ mobs:register_mob("amcaw:aainvisibleman", {
 --mobs:register_spawn("amcaw:aainvisibleman", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aainvisibleman",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aainvisibleman", "invisibleman", "amcaw_invisibleman_inv.png", 0)
@@ -1573,8 +1707,13 @@ mobs:register_mob("amcaw:aajockey", {
 --mobs:register_spawn("amcaw:aajockey", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aajockey",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aajockey", "jockey", "amcaw_jockey_inv.png", 0)
@@ -1629,8 +1768,13 @@ mobs:register_mob("amcaw:aakid", {
 --mobs:register_spawn("amcaw:aakid", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aakid",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aakid", "kid", "amcaw_kid_inv.png", 0)
@@ -1685,8 +1829,13 @@ mobs:register_mob("amcaw:aaalawyer", {
 --mobs:register_spawn("amcaw:aaalawyer", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaalawyer",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaalawyer", "lawyer", "amcaw_lawyer_inv.png", 0)
@@ -1741,8 +1890,13 @@ mobs:register_mob("amcaw:aaaloliman", {
 --mobs:register_spawn("amcaw:aaaloliman", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaaloliman",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaaloliman", "loliman", "amcaw_loliman_inv.png", 0)
@@ -1797,8 +1951,13 @@ mobs:register_mob("amcaw:aaamandog", {
 --mobs:register_spawn("amcaw:aaamandog", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaamandog",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaamandog", "mandog", "amcaw_mandog_inv.png", 0)
@@ -1852,8 +2011,13 @@ mobs:register_mob("amcaw:aamummy", {
 --mobs:register_spawn("amcaw:aamummy", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aamummy",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aamummy", "mummy", "amcaw_mummy_inv.png", 0)
@@ -1907,8 +2071,13 @@ mobs:register_mob("amcaw:aanonswimmer", {
 --mobs:register_spawn("amcaw:aanonswimmer", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aanonswimmer",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aanonswimmer", "nonswimmer", "amcaw_nonswimmer_inv.png", 0)
@@ -1963,8 +2132,13 @@ mobs:register_mob("amcaw:aaaoldlady", {
 --mobs:register_spawn("amcaw:aaaoldlady", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaaoldlady",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaaoldlady", "oldlady", "amcaw_oldlady_inv.png", 0)
@@ -2019,8 +2193,13 @@ mobs:register_mob("amcaw:aaaponie", {
 --mobs:register_spawn("amcaw:aaaponie", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaaponie",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaaponie", "ponie", "amcaw_ponie_inv.png", 0)
@@ -2075,8 +2254,13 @@ mobs:register_mob("amcaw:aaaponygirl", {
 --mobs:register_spawn("amcaw:aaaponygirl", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaaponygirl",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaaponygirl", "ponygirl", "amcaw_ponygirl_inv.png", 0)
@@ -2130,8 +2314,13 @@ mobs:register_mob("amcaw:aapreacher", {
 --mobs:register_spawn("amcaw:aapreacher", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aapreacher",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aapreacher", "preacher", "amcaw_preacher_inv.png", 0)
@@ -2186,8 +2375,13 @@ mobs:register_mob("amcaw:aaprisoner", {
 --mobs:register_spawn("amcaw:aaprisoner", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaprisoner",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaprisoner", "prisoner", "amcaw_prisoner_inv.png", 0)
@@ -2242,8 +2436,13 @@ mobs:register_mob("amcaw:aaaragingbull", {
 --mobs:register_spawn("amcaw:aaaragingbull", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaaragingbull",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaaragingbull", "ragingbull", "amcaw_ragingbull_inv.png", 0)
@@ -2298,8 +2497,13 @@ mobs:register_mob("amcaw:aaaratman", {
 --mobs:register_spawn("amcaw:aaaratman", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaaratman",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaaratman", "ratman", "amcaw_ratman_inv.png", 0)
@@ -2354,8 +2558,13 @@ mobs:register_mob("amcaw:aaarobotted", {
 --mobs:register_spawn("amcaw:aaarobotted", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaarobotted",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaarobotted", "robotted", "amcaw_robotted_inv.png", 0)
@@ -2410,8 +2619,13 @@ mobs:register_mob("amcaw:aaarobottod", {
 --mobs:register_spawn("amcaw:aaarobottod", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaarobottod",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaarobottod", "robottod", "amcaw_robottod_inv.png", 0)
@@ -2466,8 +2680,13 @@ mobs:register_mob("amcaw:aaarocketgirafe", {
 --mobs:register_spawn("amcaw:aaarocketgirafe", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaarocketgirafe",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaarocketgirafe", "rocketgirafe", "amcaw_rocketgirafe_inv.png", 0)
@@ -2522,8 +2741,13 @@ mobs:register_mob("amcaw:aaarockmonster", {
 --mobs:register_spawn("amcaw:aaarockmonster", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaarockmonster",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaarockmonster", "rockmonster", "amcaw_rockmonster_inv.png", 0)
@@ -2578,8 +2802,13 @@ mobs:register_mob("amcaw:aaasneaky_sal", {
 --mobs:register_spawn("amcaw:aaasneaky_sal", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaasneaky_sal",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaasneaky_sal", "sneaky sal", "amcaw_sneaky_sal_inv.png", 0)
@@ -2634,8 +2863,13 @@ mobs:register_mob("amcaw:aaasnowdevil", {
 --mobs:register_spawn("amcaw:aaasnowdevil", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaasnowdevil",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaasnowdevil", "snowdevil", "amcaw_snowdevil_inv.png", 0)
@@ -2689,8 +2923,13 @@ mobs:register_mob("amcaw:aathief", {
 --mobs:register_spawn("amcaw:aathief", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aathief",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aathief", "thief", "amcaw_thief_inv.png", 0)
@@ -2745,8 +2984,13 @@ mobs:register_mob("amcaw:aaazebra", {
 --mobs:register_spawn("amcaw:aaazebra", {"default:stone", "default:dirt_with_grass"}, 5, 0, 1, 1, 31000)
 
 mobs:spawn({name = "amcaw:aaazebra",
-       nodes = {"group:leaves"},
-       max_light = 7,
+       nodes = {"default:dirt_with_grass"},
+       interval = 30,
+       min_light = 10,
+       chance = 32000,
+       active_object_count = 2,
+       min_height = 0,
+       day_toggle = true,
     })
 
 mobs:register_egg("amcaw:aaazebra", "zebra", "amcaw_zebra_inv.png", 0)
