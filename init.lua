@@ -8,6 +8,9 @@ dofile(path .. "/itemss.lua")
 -- creeps
 dofile(path .. "/creeps.lua")
 
+-- spawning
+dofile(path .. "/spawning.lua")
+
 -- good creeps
 --[[
 dofile(path .. "/loliman.lua")
