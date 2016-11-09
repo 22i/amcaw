@@ -101,6 +101,19 @@ mobs:spawn({name = "amcaw:aanonswimmer",
        interval = 200,
     })
 
+--blacksouls lurk in unlit areas, caves and pyramids
+    
+mobs:spawn({name = "amcaw:aablacksoul",
+       nodes = {"default:dirt_with_grass"},
+       --min_light = 0,
+       max_light = 7,
+       min_height = -300,
+       day_toggle = true,
+       active_object_count = 2,
+       chance = 32000,
+       interval = 200,
+    })
+    
 mobs:spawn({name = "amcaw:aarmy_guy",
        nodes = {"default:dirt_with_grass"},
        min_light = 10,
@@ -112,16 +125,6 @@ mobs:spawn({name = "amcaw:aarmy_guy",
     })
     
 mobs:spawn({name = "amcaw:aaabigbaby",
-       nodes = {"default:dirt_with_grass"},
-       min_light = 10,
-       min_height = 0,
-       day_toggle = true,
-       active_object_count = 2,
-       chance = 32000,
-       interval = 200,
-    })
-
-mobs:spawn({name = "amcaw:aablacksoul",
        nodes = {"default:dirt_with_grass"},
        min_light = 10,
        min_height = 0,

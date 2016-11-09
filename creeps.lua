@@ -14,15 +14,16 @@ mobs:register_mob("amcaw:aarmy_guy", {
 	hp_min = 12,
 	hp_max = 35,
 	armor = 150,
-    --knocback does not work?
+    --knocback does not work when creeps are atacking you?
     knock_back = 6,
     reach = 1.5,
 	collisionbox = {-0.35,-1.0,-0.35, 0.35,0.8,0.35},
 	visual = "mesh",
 	mesh = "amcaw_character.b3d",
-	textures = {
-		{"amcaw_army_guy.png"},
-	},
+	--textures = {
+		--{"amcaw_army_guy.png"},
+	--},
+    textures = {{"amcaw_army_guy.png"},{"amcaw_army_guy2.png"}},
 	visual_size = {x=1, y=1},
 	makes_footstep_sound = true,
 	sounds = {
@@ -37,7 +38,7 @@ mobs:register_mob("amcaw:aarmy_guy", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "amcav:gun",
+		{name = "amcaw:gun",
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
@@ -112,9 +113,9 @@ mobs:register_mob("amcaw:aablacksoul", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
+	damage = 7,
+	hp_min = 30,
+	hp_max = 60,
 	armor = 150,
     reach = 1.5,
 	collisionbox = {-0.35,-1.0,-0.35, 0.35,0.8,0.35},
@@ -130,14 +131,17 @@ mobs:register_mob("amcaw:aablacksoul", {
 		damage = "amcaw_blacksoulhurt",
 		death = "amcaw_blacksouldeath",
 	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
+	walk_velocity = 0.6,
+	run_velocity = 0.8,
 	jump = true,
 	floats = 1,
 	view_range = 10,
+    --shoulde drop coal lump or diamond not diamond and coal lump together
 	drops = {
-		{name = "default:coal",
-		chance = 2, min = 1, max = 5,},
+		{name = "default:coal_lump",
+		chance = 1, min = 0, max = 5,},
+		{name = "default:diamond",
+		chance = 10, min = 1, max = 1,},
 	},
 	water_damage = 0,
 	lava_damage = 1,
@@ -158,6 +162,7 @@ mobs:register_egg("amcaw:aablacksoul", "blacksoul", "amcaw_blacksoul_inv.png", 0
 --###################
 
 mobs:register_mob("amcaw:aaablorp", {
+    --Blorps atack blorps , BubbleScums and Rocket Giraffes they are also passive until provoked they eat leaves to grow and when big enough they eat tree trunk
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
@@ -188,8 +193,9 @@ mobs:register_mob("amcaw:aaablorp", {
 	jump = true,
 	floats = 1,
 	view_range = 10,
+    --drops more blorpcola after getting bigger - eating leaves
 	drops = {
-		{name = "amcav:pork_raw",
+		{name = "amcaw:blorpcola",
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
@@ -211,6 +217,7 @@ mobs:register_egg("amcaw:aaablorp", "blorp", "amcaw_blorp_inv.png", 0)
 --###################
 
 mobs:register_mob("amcaw:aaabubblescum", {
+    --passive mob until provoked
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
@@ -239,10 +246,11 @@ mobs:register_mob("amcaw:aaabubblescum", {
 	jump = true,
 	floats = 1,
 	view_range = 10,
-	drops = {
-		{name = "amcav:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
+	--bubblescum drops nothing
+    --drops = {
+		--{name = "amcaw:pork_raw",
+		--chance = 2, min = 0, max = 2,},
+	--},
 	water_damage = 0,
 	lava_damage = 1,
 	light_damage = 0,
@@ -262,6 +270,7 @@ mobs:register_egg("amcaw:aaabubblescum", "bubblescum", "amcaw_bubblescum_inv.png
 --###################
 
 mobs:register_mob("amcaw:aabum", {
+    --is a neutral creep until provoked
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
@@ -313,6 +322,9 @@ mobs:register_egg("amcaw:aabum", "bum", "amcaw_bum_inv.png", 0)
 --###################
 
 mobs:register_mob("amcaw:aaacamel", {
+    --if camel jockey mounts the camel the camel becomes agresive
+    --Camels are tameable mobs that can be tamed with cookies. They are used for transportation and come in a variety of colours such as white, grey, black, brown and yellow
+    --A-camel They usually spawn in groups of 1-4.
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
@@ -325,9 +337,7 @@ mobs:register_mob("amcaw:aaacamel", {
 	visual = "mesh",
 	mesh = "amcaw_camel.b3d",
 	rotate = 180,
-	textures = {
-		{"amcaw_camel.png"},
-	},
+    textures = {{"amcaw_camel.png"},{"amcaw_camel1.png"}, {"amcaw_camelblack.png"}, {"amcaw_camelbrown.png"}, {"amcaw_camelgrey.png"}, {"amcaw_camelhires.png"}},
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -340,10 +350,11 @@ mobs:register_mob("amcaw:aaacamel", {
 	jump = true,
 	floats = 1,
 	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
+	--camel drops nothing
+    --drops = {
+		--{name = "amcaw:pork_raw",
+		--chance = 2, min = 0, max = 2,},
+	--},
 	water_damage = 0,
 	lava_damage = 1,
 	light_damage = 0,
@@ -391,8 +402,11 @@ mobs:register_mob("amcaw:aaacastle_king", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
+        --drops gem sword if you have all the five gems in your inventory when you kill him
+		{name = "default:book",
+		chance = 2, min = 0, max = 1,},
+		{name = "default:sword_steel",
+		chance = 5, min = 0, max = 1,},
 	},
 	water_damage = 0,
 	lava_damage = 1,
@@ -441,8 +455,10 @@ mobs:register_mob("amcaw:aaacastle_critter", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
-		chance = 2, min = 0, max = 1,},
+		{name = "amcaw:pork_raw",
+		chance = 2, min = 0, max = 2,},
+        {name = "bones:bones",
+		chance = 4, min = 0, max = 2,},
 	},
 	water_damage = 0,
 	lava_damage = 1,
@@ -475,9 +491,7 @@ mobs:register_mob("amcaw:aaacastle_guard", {
 	visual = "mesh",
 	mesh = "amcaw_castle_guard.b3d",
 	rotate = 180,
-	textures = {
-		{"amcaw_castleguard1.png"},
-	},
+    textures = {{"amcaw_castleguard1.png"},{"amcaw_castleguard2.png"}, {"amcaw_castleguard3.png"}, {"amcaw_castleguard4.png"}, {"amcaw_castleguard5.png"}},
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -492,7 +506,7 @@ mobs:register_mob("amcaw:aaacastle_guard", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "amcaw:pork_raw",
+		{name = "amcaw:donut",
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
@@ -616,6 +630,7 @@ mobs:register_egg("amcaw:aaacaveman", "caveman", "amcaw_caveman_inv.png", 0)
 --###################
 
 mobs:register_mob("amcaw:aaadesertlizard", {
+    --They spit fireballs if they see the player from more then 10-30 blocks spawn in groups of 1-4
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
@@ -628,9 +643,7 @@ mobs:register_mob("amcaw:aaadesertlizard", {
 	visual = "mesh",
 	mesh = "amcaw_desertlizard.b3d",
 	rotate = 180,
-	textures = {
-		{"amcaw_desertlizard.png"},
-	},
+    textures = {{"amcaw_desertlizard.png"}, {"amcaw_desertlizard1.png"}, {"amcaw_desertlizard2.png"}, {"amcaw_desertlizard3.png"}, {"amcaw_desertlizard4.png"}, {"amcaw_desertlizard5.png"}},
 	visual_size = {x=3, y=3},
 	makes_footstep_sound = true,
 	sounds = {
@@ -646,7 +659,7 @@ mobs:register_mob("amcaw:aaadesertlizard", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "amcaw:pork_raw",
+		{name = "amcaw:pork_cooked",
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
@@ -667,6 +680,8 @@ mobs:register_egg("amcaw:aaadesertlizard", "desertlizard", "amcaw_desertlizard_i
 --################### DIGIBUG
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/DigBug
+        
 mobs:register_mob("amcaw:aaadigibug", {
 	type = "monster",
 	passive = false,
@@ -697,7 +712,13 @@ mobs:register_mob("amcaw:aaadigibug", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "amcaw:pork_raw",
+		{name = "default:mossycobble",
+		chance = 2, min = 0, max = 2,},
+		{name = "default:stone_with_coal",
+		chance = 2, min = 0, max = 2,},
+		{name = "default:iron_lump",
+		chance = 2, min = 0, max = 2,},
+		{name = "default:cobble",
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
@@ -819,6 +840,8 @@ mobs:register_egg("amcaw:aaevilscientist", "evilscientist", "amcaw_evilscience_i
 --################### FLOBMOTHERSHIP
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/FloobShip
+        
 mobs:register_mob("amcaw:aaaflobmothership", {
 	type = "monster",
 	passive = false,
@@ -848,10 +871,10 @@ mobs:register_mob("amcaw:aaaflobmothership", {
 	jump = true,
 	floats = 1,
 	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
+	--drops = {
+		--{name = "amcaw:pork_raw",
+		--chance = 2, min = 0, max = 2,},
+	--},
 	water_damage = 0,
 	lava_damage = 1,
 	light_damage = 0,
@@ -870,6 +893,8 @@ mobs:register_egg("amcaw:aaaflobmothership", "flobmothership", "amcaw_flobmother
 --################### FLOOB
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Floob
+        
 mobs:register_mob("amcaw:aaafloob", {
 	type = "monster",
 	passive = false,
@@ -921,6 +946,8 @@ mobs:register_egg("amcaw:aaafloob", "floob", "amcaw_a_floob_inv.png", 0)
 --################### G
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/G
+        
 mobs:register_mob("amcaw:aaag", {
 	type = "monster",
 	passive = false,
@@ -951,8 +978,26 @@ mobs:register_mob("amcaw:aaag", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
+		{name = "default:gravel",
 		chance = 2, min = 0, max = 1,},
+        {name = "default:glass",
+		chance = 4, min = 0, max = 1,},
+        {name = "default:gold_lump",
+		chance = 6, min = 0, max = 1,},
+        {name = "default:gold_ingot",
+		chance = 8, min = 0, max = 1,},
+        {name = "default:sword_mese",
+		chance = 20, min = 0, max = 1,},
+        {name = "default:pick_mese",
+		chance = 40, min = 0, max = 1,},
+        {name = "default:hoe_mese",
+		chance = 20, min = 0, max = 1,},
+        {name = "default:axe_mese",
+		chance = 40, min = 0, max = 1,},
+        {name = "default:shovel_mese",
+		chance = 20, min = 0, max = 1,},
+        {name = "tnt:gunpowder",
+		chance = 10, min = 0, max = 1,},
 	},
 	water_damage = 0,
 	lava_damage = 1,
@@ -972,6 +1017,8 @@ mobs:register_egg("amcaw:aaag", "g", "amcaw_g_inv.png", 0)
 --################### GOO GOAT
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Goo_Goat
+        
 mobs:register_mob("amcaw:aaagoogoat", {
 	type = "monster",
 	passive = false,
@@ -1002,7 +1049,7 @@ mobs:register_mob("amcaw:aaagoogoat", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "amcaw:pork_raw",
+		{name = "amcaw:goodonut",
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
@@ -1054,8 +1101,8 @@ mobs:register_mob("amcaw:aaagrowbotgregg", {
 	floats = 0,
 	view_range = 10,
 	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
+		{name = "amcaw:growray",
+		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
 	lava_damage = 1,
@@ -1091,6 +1138,7 @@ mobs:register_mob("amcaw:aaaguineapig", {
 	textures = {
 		{"amcaw_guineapig.png"},
 	},
+    textures = {{"amcaw_ggpig1.png"}, {"amcaw_ggpig2.png"}, {"amcaw_ggpig3.png"}, {"amcaw_ggpig4.png"}, {"amcaw_ggpig5.png"}, {"amcaw_ggpig6.png"}, {"amcaw_ggpig7.png"}, {"amcaw_ggpig8.png"}, {"amcaw_ggpig9.png"}, {"amcaw_ggpiga.png"}},
 	visual_size = {x=3, y=3},
 	makes_footstep_sound = true,
 	sounds = {
@@ -1177,6 +1225,8 @@ mobs:register_egg("amcaw:aaahippo", "hippo", "amcaw_hippo_inv.png", 0)
 --################### HORSEHEAD
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Rocket_Powered_Horse_Head
+        
 mobs:register_mob("amcaw:aaahorsehead", {
 	type = "monster",
 	passive = false,
@@ -1206,10 +1256,10 @@ mobs:register_mob("amcaw:aaahorsehead", {
 	jump = true,
 	floats = 1,
 	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
+	--drops = {
+		--{name = "amcaw:pork_raw",
+		--chance = 2, min = 0, max = 2,},
+	--},
 	water_damage = 0,
 	lava_damage = 1,
 	light_damage = 0,
@@ -1241,9 +1291,7 @@ mobs:register_mob("amcaw:aaahotdog", {
 	visual = "mesh",
 	mesh = "amcaw_hotdog.b3d",
 	rotate = 180,
-	textures = {
-		{"amcaw_hotdog.png"},
-	},
+    textures = {{"amcaw_hotdg1.png"},{"amcaw_hotdg2.png"},{"amcaw_hotdg3.png"}},
 	visual_size = {x=3, y=3},
 	makes_footstep_sound = true,
 	sounds = {
@@ -1279,6 +1327,8 @@ mobs:register_egg("amcaw:aaahotdog", "hotdog", "amcaw_hotdog_inv.png", 0)
 --################### HUNCHBACK
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Hunchback
+        
 mobs:register_mob("amcaw:aaahunchback", {
 	type = "monster",
 	passive = false,
@@ -1309,7 +1359,7 @@ mobs:register_mob("amcaw:aaahunchback", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
+		{name = "default:sand",
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
@@ -1330,6 +1380,8 @@ mobs:register_egg("amcaw:aaahunchback", "hunchback", "amcaw_hunchback_inv.png", 
 --################### INVISIBLEMAN
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Invisible_Man
+        
 mobs:register_mob("amcaw:aainvisibleman", {
 	type = "monster",
 	passive = false,
@@ -1359,8 +1411,8 @@ mobs:register_mob("amcaw:aainvisibleman", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
-		chance = 2, min = 1, max = 5,},
+		{name = "default:stick",
+		chance = 2, min = 1, max = 2,},
 	},
 	water_damage = 0,
 	lava_damage = 1,
@@ -1409,7 +1461,7 @@ mobs:register_mob("amcaw:aajockey", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
+		{name = "default:pork_raw",
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
@@ -1460,7 +1512,7 @@ mobs:register_mob("amcaw:aakid", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
+		{name = "default:pork_raw",
 		chance = 2, min = 1, max = 5,},
 	},
 	water_damage = 0,
@@ -1481,6 +1533,8 @@ mobs:register_egg("amcaw:aakid", "kid", "amcaw_kid_inv.png", 0)
 --################### LAWYER
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Lawyer_From_Hell
+        
 mobs:register_mob("amcaw:aaalawyer", {
 	type = "monster",
 	passive = false,
@@ -1511,10 +1565,10 @@ mobs:register_mob("amcaw:aaalawyer", {
 	jump = true,
 	floats = 1,
 	view_range = 10,
-	drops = {
-		{name = "default:coal",
-		chance = 2, min = 0, max = 1,},
-	},
+	--drops = {
+		--{name = "default:coal",
+		--chance = 2, min = 0, max = 1,},
+	--},
 	water_damage = 0,
 	lava_damage = 1,
 	light_damage = 0,
@@ -1533,6 +1587,8 @@ mobs:register_egg("amcaw:aaalawyer", "lawyer", "amcaw_lawyer_inv.png", 0)
 --################### LOLIMAN
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Lolliman
+        
 mobs:register_mob("amcaw:aaaloliman", {
 	type = "monster",
 	passive = false,
@@ -1584,6 +1640,8 @@ mobs:register_egg("amcaw:aaaloliman", "loliman", "amcaw_loliman_inv.png", 0)
 --################### MANDOG
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/ManDog
+        
 mobs:register_mob("amcaw:aaamandog", {
 	type = "monster",
 	passive = false,
@@ -1614,7 +1672,7 @@ mobs:register_mob("amcaw:aaamandog", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
+		{name = "bones:bones",
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
@@ -1635,6 +1693,8 @@ mobs:register_egg("amcaw:aaamandog", "mandog", "amcaw_mandog_inv.png", 0)
 --################### MUMMY
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Mummy
+        
 mobs:register_mob("amcaw:aamummy", {
 	type = "monster",
 	passive = false,
@@ -1664,7 +1724,7 @@ mobs:register_mob("amcaw:aamummy", {
 	floats = 0,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
+		{name = "default:sand",
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
@@ -1685,6 +1745,8 @@ mobs:register_egg("amcaw:aamummy", "mummy", "amcaw_mummy_inv.png", 0)
 --################### NONSWIMMER
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Non_Swimmer
+        
 mobs:register_mob("amcaw:aanonswimmer", {
 	type = "monster",
 	passive = false,
@@ -1713,10 +1775,10 @@ mobs:register_mob("amcaw:aanonswimmer", {
 	jump = true,
 	floats = 0,
 	view_range = 10,
-	drops = {
-		{name = "default:coal",
-		chance = 2, min = 0, max = 1,},
-	},
+	--drops = {
+		--{name = "default:coal",
+		--chance = 2, min = 0, max = 1,},
+	--},
 	water_damage = 0,
 	lava_damage = 1,
 	light_damage = 0,
@@ -1765,7 +1827,7 @@ mobs:register_mob("amcaw:aaaoldlady", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
+		{name = "default:pork_raw",
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
@@ -1799,9 +1861,7 @@ mobs:register_mob("amcaw:aaaponie", {
 	visual = "mesh",
 	mesh = "amcaw_ponie.b3d",
 	rotate = 180,
-	textures = {
-		{"amcaw_ponie.png"},
-	},
+    textures = {{"amcaw_pony01.png"}, {"amcaw_pony02.png"}, {"amcaw_pony03.png"}, {"amcaw_pony04.png"},{"amcaw_pony05.png"}, {"amcaw_pony06.png"}, {"amcaw_pony07.png"}, {"amcaw_pony08.png"}, {"amcaw_pony09.png"}, {"amcaw_ponybaby.png"}},
 	visual_size = {x=5, y=5},
 	makes_footstep_sound = true,
 	sounds = {
@@ -1837,6 +1897,8 @@ mobs:register_egg("amcaw:aaaponie", "ponie", "amcaw_ponie_inv.png", 0)
 --################### PONYGIRL
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Pony_Girl
+        
 mobs:register_mob("amcaw:aaaponygirl", {
 	type = "monster",
 	passive = false,
@@ -1866,10 +1928,10 @@ mobs:register_mob("amcaw:aaaponygirl", {
 	jump = true,
 	floats = 1,
 	view_range = 10,
-	drops = {
-		{name = "default:coal",
-		chance = 2, min = 0, max = 1,},
-	},
+	--drops = {
+		--{name = "default:pork_raw",
+		--chance = 2, min = 0, max = 1,},
+	--},
 	water_damage = 0,
 	lava_damage = 1,
 	light_damage = 0,
@@ -1888,6 +1950,8 @@ mobs:register_egg("amcaw:aaaponygirl", "ponygirl", "amcaw_ponygirl_inv.png", 0)
 --################### PREACHER
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Preacher
+        
 mobs:register_mob("amcaw:aapreacher", {
 	type = "monster",
 	passive = false,
@@ -1917,8 +1981,18 @@ mobs:register_mob("amcaw:aapreacher", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
+		{name = "flowers:rose",
+		chance = 8, min = 0, max = 1,},
+        {name = "default:apple",
+		chance = 4, min = 0, max = 1,},
+        {name = "default:book",
 		chance = 2, min = 0, max = 1,},
+        {name = "default:mese_crystal_fragment",
+		chance = 12, min = 0, max = 1,},
+        {name = "default:gold_lump",
+		chance = 16, min = 0, max = 1,},
+        {name = "default:diamond",
+		chance = 50, min = 0, max = 1,},
 	},
 	water_damage = 0,
 	lava_damage = 1,
@@ -1966,10 +2040,10 @@ mobs:register_mob("amcaw:aaprisoner", {
 	jump = true,
 	floats = 1,
 	view_range = 10,
-	drops = {
-		{name = "default:coal",
-		chance = 2, min = 0, max = 1,},
-	},
+	--drops = {
+		--{name = "default:pork_raw",
+		--chance = 2, min = 0, max = 1,},
+	--},
 	water_damage = 0,
 	lava_damage = 1,
 	light_damage = 0,
@@ -2039,6 +2113,8 @@ mobs:register_egg("amcaw:aaaragingbull", "ragingbull", "amcaw_ragingbull_inv.png
 --################### RATMAN
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/RatMan
+        
 mobs:register_mob("amcaw:aaaratman", {
 	type = "monster",
 	passive = false,
@@ -2069,7 +2145,7 @@ mobs:register_mob("amcaw:aaaratman", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
+		{name = "default:pork_raw",
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
@@ -2090,6 +2166,8 @@ mobs:register_egg("amcaw:aaaratman", "ratman", "amcaw_ratman_inv.png", 0)
 --################### ROBOTTED
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Robot_Ted
+        
 mobs:register_mob("amcaw:aaarobotted", {
 	type = "monster",
 	passive = false,
@@ -2143,6 +2221,8 @@ mobs:register_egg("amcaw:aaarobotted", "robotted", "amcaw_robotted_inv.png", 0)
 --################### ROBOTTOD
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Robot_Todd
+        
 mobs:register_mob("amcaw:aaarobottod", {
 	type = "monster",
 	passive = false,
@@ -2196,6 +2276,8 @@ mobs:register_egg("amcaw:aaarobottod", "robottod", "amcaw_robottod_inv.png", 0)
 --################### ROCKETGIRAFE
 --###################
 
+--http://morecreepsandweirdos.wikia.com/wiki/Rocket_Giraffe
+        
 mobs:register_mob("amcaw:aaarocketgirafe", {
 	type = "monster",
 	passive = false,
@@ -2362,9 +2444,7 @@ mobs:register_mob("amcaw:aaasnowdevil", {
 	visual = "mesh",
 	mesh = "amcaw_snowdevil.b3d",
 	rotate = 180,
-	textures = {
-		{"amcaw_snowdevil.png"},
-	},
+    textures = {{"amcaw_snowdevil.png"},{"amcaw_snowdevil2.png"}},
 	visual_size = {x=4, y=4},
 	makes_footstep_sound = true,
 	sounds = {
@@ -2429,7 +2509,7 @@ mobs:register_mob("amcaw:aathief", {
 	floats = 1,
 	view_range = 10,
 	drops = {
-		{name = "default:coal",
+		{name = "default:sand",
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
