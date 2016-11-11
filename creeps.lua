@@ -95,10 +95,10 @@ mobs:register_mob("amcaw:aaabigbaby", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -202,10 +202,10 @@ mobs:register_mob("amcaw:aaablorp", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -255,10 +255,10 @@ mobs:register_mob("amcaw:aaabubblescum", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -359,10 +359,10 @@ mobs:register_mob("amcaw:aaacamel", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -412,10 +412,10 @@ mobs:register_mob("amcaw:aaacastle_king", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -464,10 +464,10 @@ mobs:register_mob("amcaw:aaacastle_critter", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -513,10 +513,10 @@ mobs:register_mob("amcaw:aaacastle_guard", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -564,10 +564,10 @@ mobs:register_mob("amcaw:aaacavelady", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -615,10 +615,10 @@ mobs:register_mob("amcaw:aaacaveman", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -666,10 +666,10 @@ mobs:register_mob("amcaw:aaadesertlizard", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -725,10 +725,10 @@ mobs:register_mob("amcaw:aaadigibug", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -2366,7 +2366,7 @@ mobs:register_mob("amcaw:aaarockmonster", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
+		speed_normal = 25,		speed_run = 30,
 		stand_start = 0,		stand_end = 80,
 		walk_start = 80,		walk_end = 120,
 		run_start = 80,		run_end = 120,
