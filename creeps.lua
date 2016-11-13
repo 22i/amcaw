@@ -2,60 +2,6 @@
 --#1west-pink/#2down/#3south-blue/#4east-red/#5up/#6north-yelow
 
 --###################
---################### ARMY GUY
---###################
-
-mobs:register_mob("amcaw:aarmy_guy", {
-	type = "monster",
-    --is passive until provoked
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    --knocback does not work when creeps are atacking you?
-    knock_back = 6,
-    reach = 1.5,
-	collisionbox = {-0.35,-1.0,-0.35, 0.35,0.8,0.35},
-	visual = "mesh",
-	mesh = "amcaw_character.b3d",
-	--textures = {
-		--{"amcaw_army_guy.png"},
-	--},
-    textures = {{"amcaw_army_guy.png"},{"amcaw_army_guy2.png"}},
-	visual_size = {x=1, y=1},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_army",
-        --most of the damage sound should play in order first he loses his arms then legs...
-		damage = "amcaw_armyarm",
-		death = "amcaw_armydeath",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:gun",
-		chance = 2, min = 0, max = 1,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
-		--punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aarmy_guy", "army guy", "amcaw_army_guy_inv.png", 0)
-
---###################
 --################### BIG BABY
 --###################
 
@@ -104,58 +50,6 @@ mobs:register_mob("amcaw:aaabigbaby", {
 })
 
 mobs:register_egg("amcaw:aaabigbaby", "bigbaby", "amcaw_bigbaby_inv.png", 0)
-
---###################
---################### BLACKSOUL
---###################
-
-mobs:register_mob("amcaw:aablacksoul", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 7,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
-    reach = 1.5,
-	collisionbox = {-0.35,-1.0,-0.35, 0.35,0.8,0.35},
-	visual = "mesh",
-	mesh = "amcaw_character.b3d",
-	textures = {
-		{"amcaw_blacksoul.png"},
-	},
-	visual_size = {x=1, y=1},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_blacksoul",
-		damage = "amcaw_blacksoulhurt",
-		death = "amcaw_blacksouldeath",
-	},
-	walk_velocity = 0.6,
-	run_velocity = 0.8,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-    --shoulde drop coal lump or diamond not diamond and coal lump together
-	drops = {
-		{name = "default:coal_lump",
-		chance = 1, min = 0, max = 5,},
-		{name = "default:diamond",
-		chance = 10, min = 1, max = 1,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aablacksoul", "blacksoul", "amcaw_blacksoul_inv.png", 0)
 
 --###################
 --################### BLORP
@@ -264,58 +158,6 @@ mobs:register_mob("amcaw:aaabubblescum", {
 })
 
 mobs:register_egg("amcaw:aaabubblescum", "bubblescum", "amcaw_bubblescum_inv.png", 0)
-
---###################
---################### BUM
---###################
-
-mobs:register_mob("amcaw:aabum", {
-    --is a neutral creep until provoked
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.5,
-	collisionbox = {-0.35,-1.0,-0.35, 0.35,0.8,0.35},
-	visual = "mesh",
-	mesh = "amcaw_character.b3d",
-	textures = {
-		{"amcaw_bum.png"},
-	},
-	visual_size = {x=1, y=1},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_bum",
-		damage = "amcaw_bumhurt",
-        --bumdontwant sound plays when you give bum wrong item
-        --bumleavemealon, bumlivingpee, bumpee...
-		death = "amcaw_bumdeath",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 0,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_cooked",
-		chance = 2, min = 0, max = 1,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aabum", "bum", "amcaw_bum_inv.png", 0)
 
 --###################
 --################### CAMEL
@@ -776,65 +618,15 @@ mobs:register_mob("amcaw:aaadiscomole", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
 
 mobs:register_egg("amcaw:aaadiscomole", "discomole", "amcaw_discomole_inv.png", 0)
-
---###################
---################### EVILSCIENTIST
---###################
-
-mobs:register_mob("amcaw:aaevilscientist", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.5,
-	collisionbox = {-0.35,-1.0,-0.35, 0.35,0.8,0.35},
-	visual = "mesh",
-	mesh = "amcaw_character.b3d",
-	textures = {
-		{"amcaw_evilscientist.png"},
-	},
-	visual_size = {x=1, y=1},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_evillaugh",
-		damage = "amcaw_evilhurt",
-		--attack = "abc",
-		--death = "abc",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_cooked",
-		chance = 2, min = 0, max = 1,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaevilscientist", "evilscientist", "amcaw_evilscience_inv.png", 0)
 
 --###################
 --################### FLOBMOTHERSHIP
@@ -879,10 +671,10 @@ mobs:register_mob("amcaw:aaaflobmothership", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 15,		speed_run = 20,
+		stand_start = 0,		stand_end = 40,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -932,10 +724,10 @@ mobs:register_mob("amcaw:aaafloob", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -1003,10 +795,10 @@ mobs:register_mob("amcaw:aaag", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -1056,10 +848,10 @@ mobs:register_mob("amcaw:aaagoogoat", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -1108,10 +900,10 @@ mobs:register_mob("amcaw:aaagrowbotgregg", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -1160,10 +952,10 @@ mobs:register_mob("amcaw:aaaguineapig", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -1211,10 +1003,10 @@ mobs:register_mob("amcaw:aaahippo", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -1264,10 +1056,10 @@ mobs:register_mob("amcaw:aaahorsehead", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -1313,10 +1105,10 @@ mobs:register_mob("amcaw:aaahotdog", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
 })
@@ -1366,6 +1158,894 @@ mobs:register_mob("amcaw:aaahunchback", {
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaahunchback", "hunchback", "amcaw_hunchback_inv.png", 0)
+
+--###################
+--################### LAWYER
+--###################
+
+--http://morecreepsandweirdos.wikia.com/wiki/Lawyer_From_Hell
+        
+mobs:register_mob("amcaw:aaalawyer", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1,
+	collisionbox = {-0.4, -0.01, -0.4, 0.4, 2.1, 0.4},
+	visual = "mesh",
+	mesh = "amcaw_lawyer.b3d",
+    rotate = 180,
+	textures = {
+		{"amcaw_lawyerfromhell.png"},
+	},
+	visual_size = {x=4, y=4},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_lawyer",
+		damage = "amcaw_lawyermoneyhit",
+		attack = "amcaw_lawyerhurt",
+        --many more lawyer sounds
+		death = "amcaw_lawyerdeath",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	--drops = {
+		--{name = "default:coal",
+		--chance = 2, min = 0, max = 1,},
+	--},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaalawyer", "lawyer", "amcaw_lawyer_inv.png", 0)
+
+--###################
+--################### LOLIMAN
+--###################
+
+--http://morecreepsandweirdos.wikia.com/wiki/Lolliman
+        
+mobs:register_mob("amcaw:aaaloliman", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1,
+	collisionbox = {-1, -0.01, -1, 1, 4.2, 1},
+    rotate = 180,
+	visual = "mesh",
+	mesh = "amcaw_loliman.b3d",
+	textures = {
+		{"amcaw_loliman.png"},
+	},
+	visual_size = {x=6, y=6},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_lolliman",
+		damage = "amcaw_lollimanhurt",
+		--attack = "abc",
+		death = "amcaw_lollimandeath",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:pork_raw",
+		chance = 2, min = 0, max = 2,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaaloliman", "loliman", "amcaw_loliman_inv.png", 0)
+
+--###################
+--################### MANDOG
+--###################
+
+--http://morecreepsandweirdos.wikia.com/wiki/ManDog
+        
+mobs:register_mob("amcaw:aaamandog", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.5,
+	collisionbox = {-0.7, -0.01, -0.7, 0.7, 2.3, 0.7},
+	visual = "mesh",
+	mesh = "amcaw_mandog.b3d",
+    rotate = 180,
+	textures = {
+		{"amcaw_mandog.png"},
+	},
+	visual_size = {x=4, y=4},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_mandog",
+		damage = "amcaw_mandoghurt",
+		--attack = "abc",
+		death = "amcaw_mandogdeath",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "bones:bones",
+		chance = 2, min = 0, max = 1,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaamandog", "mandog", "amcaw_mandog_inv.png", 0)
+
+--###################
+--################### OLDLADY
+--###################
+
+mobs:register_mob("amcaw:aaaoldlady", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1,
+	collisionbox = {-0.5, -0.01, -0.5, 0.5, 1.7, 0.5},
+    rotate = 180,
+	visual = "mesh",
+	mesh = "amcaw_oldlady.b3d",
+	textures = {
+		{"amcaw_oldlady.png"},
+	},
+	visual_size = {x=4, y=4},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_old",
+		damage = "amcaw_oldhurt",
+		--attack = "abc",
+		death = "amcaw_olddeath",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "default:pork_raw",
+		chance = 2, min = 0, max = 1,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaaoldlady", "oldlady", "amcaw_oldlady_inv.png", 0)
+
+--###################
+--################### PONIE
+--###################
+
+mobs:register_mob("amcaw:aaaponie", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.7,
+	collisionbox = {-1, -0.01, -1, 1, 1.8, 1},
+	visual = "mesh",
+	mesh = "amcaw_ponie.b3d",
+	rotate = 180,
+    textures = {{"amcaw_pony01.png"}, {"amcaw_pony02.png"}, {"amcaw_pony03.png"}, {"amcaw_pony04.png"},{"amcaw_pony05.png"}, {"amcaw_pony06.png"}, {"amcaw_pony07.png"}, {"amcaw_pony08.png"}, {"amcaw_pony09.png"}, {"amcaw_ponybaby.png"}},
+	visual_size = {x=5, y=5},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_pony",
+		--damage = "abc",
+		attack = "amcaw_ponyattack",
+		death = "amcaw_ponydeath",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:pork_raw",
+		chance = 2, min = 0, max = 2,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaaponie", "ponie", "amcaw_ponie_inv.png", 0)
+
+--###################
+--################### PONYGIRL
+--###################
+
+--http://morecreepsandweirdos.wikia.com/wiki/Pony_Girl
+        
+mobs:register_mob("amcaw:aaaponygirl", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1,
+	collisionbox = {-0.5, -0.01, -0.5, 0.5, 1.75, 0.5},
+    rotate = 180,
+    visual_size = {x=4, y=4},
+	visual = "mesh",
+	mesh = "amcaw_ponygirl.b3d",
+	textures = {
+		{"amcaw_ponygirl.png"},
+	},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_ponygirlcell",
+		damage = "amcaw_ponygirlhurt",
+		--attack = "abc",
+		death = "amcaw_ponygirldeath",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	--drops = {
+		--{name = "default:pork_raw",
+		--chance = 2, min = 0, max = 1,},
+	--},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaaponygirl", "ponygirl", "amcaw_ponygirl_inv.png", 0)
+
+--###################
+--################### RAGINGBULL
+--###################
+
+mobs:register_mob("amcaw:aaaragingbull", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 3,
+	collisionbox = {-2, -0.01, -2, 2, 2.3, 2},
+	visual = "mesh",
+	mesh = "amcaw_ragingbull.b3d",
+	rotate = 180,
+	textures = {
+		{"amcaw_ragingbull.png"},
+	},
+	visual_size = {x=8, y=8},
+	makes_footstep_sound = true,
+	sounds = {
+		--random = "abc",
+		--damage = "abc",
+		--attack = "abc",
+		--death = "abc",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:pork_raw",
+		chance = 2, min = 0, max = 2,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaaragingbull", "ragingbull", "amcaw_ragingbull_inv.png", 0)
+
+--###################
+--################### RATMAN
+--###################
+
+--http://morecreepsandweirdos.wikia.com/wiki/RatMan
+        
+mobs:register_mob("amcaw:aaaratman", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.7,
+	collisionbox = {-1.1, -0.01, -1.1, 1.1, 2.2, 1.1},
+	visual = "mesh",
+	mesh = "amcaw_ratman.b3d",
+    rotate = 180,
+	textures = {
+		{"amcaw_ratman.png"},
+	},
+	visual_size = {x=4, y=4},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_ratman",
+		damage = "amcaw_ratmanhurt",
+		attack = "amcaw_ratmanscratch",
+		--death = "abc",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "default:pork_raw",
+		chance = 2, min = 0, max = 1,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+   
+mobs:register_egg("amcaw:aaaratman", "ratman", "amcaw_ratman_inv.png", 0)
+
+--###################
+--################### ROBOTTED
+--###################
+
+--http://morecreepsandweirdos.wikia.com/wiki/Robot_Ted
+        
+mobs:register_mob("amcaw:aaarobotted", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.3,
+	collisionbox = {-0.9, -0.01, -0.9, 0.9, 2.9, 0.9},
+	visual = "mesh",
+	mesh = "amcaw_robotted.b3d",
+	rotate = 180,
+    attacks_monsters = "amcaw:aaarobottod",
+    attack_specific = {"player", "amcaw:aaarobottod"},
+	textures = {
+		{"amcaw_robotted.png"},
+	},
+	visual_size = {x=7, y=7},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_tedinsult",
+		damage = "amcaw_robothurt",
+		--attack = "abc",
+		death = "amcaw_teddead",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:b16k_ram",
+		chance = 1, min = 4, max = 4,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaarobotted", "robotted", "amcaw_robotted_inv.png", 0)
+
+--###################
+--################### ROBOTTOD
+--###################
+
+--http://morecreepsandweirdos.wikia.com/wiki/Robot_Todd
+        
+mobs:register_mob("amcaw:aaarobottod", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.3,
+	collisionbox = {-0.8, -0.01, -0.8, 0.8, 2.9, 0.8},
+	visual = "mesh",
+	mesh = "amcaw_robottod.b3d",
+	rotate = 180,
+    attacks_monsters = "amcaw:aaarobotted",
+    attack_specific = {"player", "amcaw:aaarobotted"},
+	textures = {
+		{"amcaw_robottod.png"},
+	},
+	visual_size = {x=7, y=7},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_toddinsult",
+		damage = "amcaw_robothurt",
+		--attack = "abc",
+		death = "amcaw_todddead",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 0,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:battery",
+		chance = 2, min = 1, max = 1,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaarobottod", "robottod", "amcaw_robottod_inv.png", 0)
+
+--###################
+--################### ROCKETGIRAFE
+--###################
+
+--http://morecreepsandweirdos.wikia.com/wiki/Rocket_Giraffe
+        
+mobs:register_mob("amcaw:aaarocketgirafe", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 2,
+	collisionbox = {-1.2, -0.01, -1.2, 1.2, 3.3, 1.2},
+	visual = "mesh",
+	mesh = "amcaw_rocketgirafe.b3d",
+	rotate = 180,
+	textures = {
+		{"amcaw_rocketgirafe.png"},
+	},
+	visual_size = {x=5, y=5},
+	makes_footstep_sound = true,
+	sounds = {
+		--random = "abc",
+		--damage = "abc",
+		--attack = "abc",
+		--death = "abc",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:pork_raw",
+		chance = 2, min = 0, max = 2,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaarocketgirafe", "rocketgirafe", "amcaw_rocketgirafe_inv.png", 0)
+
+--###################
+--################### ROCK MONSTER
+--###################
+
+mobs:register_mob("amcaw:aaarockmonster", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.7,
+	collisionbox = {-1.3, -0.01, -1.3, 1.3, 3.7, 1.3},
+	visual = "mesh",
+	mesh = "amcaw_rockmonster.b3d",
+	rotate = 180,
+	textures = {
+		{"amcaw_rockmonster.png"},
+	},
+	visual_size = {x=5, y=5},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_rockmonster",
+		damage = "amcaw_rockmonsterhurt",
+		--attack = "abc",
+		death = "amcaw_rockmonsterdeath",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 0,
+	view_range = 10,
+	drops = {
+		{name = "default:cobble",
+		chance = 2, min = 0, max = 12,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 0,		stand_end = 80,
+		walk_start = 80,		walk_end = 120,
+		run_start = 80,		run_end = 120,
+		punch_start = 120,		punch_end = 134,
+	},
+})
+
+mobs:register_egg("amcaw:aaarockmonster", "rockmonster", "amcaw_rockmonster_inv.png", 0)
+
+--###################
+--################### SNEAKY SAL
+--###################
+
+mobs:register_mob("amcaw:aaasneaky_sal", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.8,
+	collisionbox = {-1.3, -0.01, -1.3, 1.3, 2.8, 1.3},
+	visual = "mesh",
+	mesh = "amcaw_sneaky_sal.b3d",
+	rotate = 180,
+	textures = {
+		{"amcaw_sneaky_sal.png"},
+	},
+	visual_size = {x=8, y=8},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_salgreeting",
+		damage = "amcaw_salhurt",
+		--attack = "abc",
+		death = "amcaw_saldead",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:pork_raw",
+		chance = 2, min = 0, max = 2,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaasneaky_sal", "sneaky sal", "amcaw_sneaky_sal_inv.png", 0)
+
+--###################
+--################### SNOWDEVIL
+--###################
+
+mobs:register_mob("amcaw:aaasnowdevil", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.6,
+	collisionbox = {-1.1, -0.01, -1.1, 1.1, 1.5, 1.1},
+	visual = "mesh",
+	mesh = "amcaw_snowdevil.b3d",
+	rotate = 180,
+    textures = {{"amcaw_snowdevil.png"},{"amcaw_snowdevil2.png"}},
+	visual_size = {x=4, y=4},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_snowdevil",
+		damage = "amcaw_snowdevilhurt",
+		--attack = "abc",
+		death = "amcaw_snowdevildeath",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:pork_raw",
+		chance = 2, min = 0, max = 2,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaasnowdevil", "snowdevil", "amcaw_snowdevil_inv.png", 0)
+
+--###################
+--################### ZEBRA
+--###################
+
+mobs:register_mob("amcaw:aaazebra", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.8,
+	collisionbox = {-1.3, -0.01, -1.3, 1.3, 1.9, 1.3},
+	visual = "mesh",
+	mesh = "amcaw_zebra.b3d",
+	rotate = 180,
+	textures = {
+		{"amcaw_zebra.png"},
+	},
+	visual_size = {x=5, y=5},
+	makes_footstep_sound = true,
+	sounds = {
+		--random = "abc",
+		--damage = "abc",
+		--attack = "abc",
+		--death = "abc",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:pork_raw",
+		chance = 2, min = 0, max = 2,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 25,		speed_run = 30,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaazebra", "zebra", "amcaw_zebra_inv.png", 0)
+
+--###################
+--################### ARMY GUY
+--###################
+
+mobs:register_mob("amcaw:aarmy_guy", {
+	type = "monster",
+    --is passive until provoked
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    --knocback does not work when creeps are atacking you?
+    knock_back = 6,
+    reach = 1.5,
+	collisionbox = {-0.35,-1.0,-0.35, 0.35,0.8,0.35},
+	visual = "mesh",
+	mesh = "amcaw_character.b3d",
+	--textures = {
+		--{"amcaw_army_guy.png"},
+	--},
+    textures = {{"amcaw_army_guy.png"},{"amcaw_army_guy2.png"}},
+	visual_size = {x=1, y=1},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_army",
+        --most of the damage sound should play in order first he loses his arms then legs...
+		damage = "amcaw_armyarm",
+		death = "amcaw_armydeath",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:gun",
+		chance = 2, min = 0, max = 1,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 10,		speed_run = 15,
+		stand_start = 0,		stand_end = 79,
+		walk_start = 168,		walk_end = 188,
+		run_start = 168,		run_end = 188,
+		--punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aarmy_guy", "army guy", "amcaw_army_guy_inv.png", 0)
+
+--###################
+--################### BLACKSOUL
+--###################
+
+mobs:register_mob("amcaw:aablacksoul", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 7,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    reach = 1.5,
+	collisionbox = {-0.35,-1.0,-0.35, 0.35,0.8,0.35},
+	visual = "mesh",
+	mesh = "amcaw_character.b3d",
+	textures = {
+		{"amcaw_blacksoul.png"},
+	},
+	visual_size = {x=1, y=1},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_blacksoul",
+		damage = "amcaw_blacksoulhurt",
+		death = "amcaw_blacksouldeath",
+	},
+	walk_velocity = 0.6,
+	run_velocity = 0.8,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+    --shoulde drop coal lump or diamond not diamond and coal lump together
+	drops = {
+		{name = "default:coal_lump",
+		chance = 1, min = 0, max = 5,},
+		{name = "default:diamond",
+		chance = 10, min = 1, max = 1,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
 		speed_normal = 10,		speed_run = 15,
 		stand_start = 0,		stand_end = 79,
 		walk_start = 168,		walk_end = 188,
@@ -1374,7 +2054,109 @@ mobs:register_mob("amcaw:aaahunchback", {
 	},
 })
 
-mobs:register_egg("amcaw:aaahunchback", "hunchback", "amcaw_hunchback_inv.png", 0)
+mobs:register_egg("amcaw:aablacksoul", "blacksoul", "amcaw_blacksoul_inv.png", 0)
+
+--###################
+--################### BUM
+--###################
+
+mobs:register_mob("amcaw:aabum", {
+    --is a neutral creep until provoked
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.5,
+	collisionbox = {-0.35,-1.0,-0.35, 0.35,0.8,0.35},
+	visual = "mesh",
+	mesh = "amcaw_character.b3d",
+	textures = {
+		{"amcaw_bum.png"},
+	},
+	visual_size = {x=1, y=1},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_bum",
+		damage = "amcaw_bumhurt",
+        --bumdontwant sound plays when you give bum wrong item
+        --bumleavemealon, bumlivingpee, bumpee...
+		death = "amcaw_bumdeath",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 0,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:pork_cooked",
+		chance = 2, min = 0, max = 1,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 10,		speed_run = 15,
+		stand_start = 0,		stand_end = 79,
+		walk_start = 168,		walk_end = 188,
+		run_start = 168,		run_end = 188,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aabum", "bum", "amcaw_bum_inv.png", 0)
+
+--###################
+--################### EVILSCIENTIST
+--###################
+
+mobs:register_mob("amcaw:aaevilscientist", {
+	type = "monster",
+	passive = false,
+	attack_type = "dogfight",
+	damage = 3,
+	hp_min = 12,
+	hp_max = 35,
+	armor = 150,
+    reach = 1.5,
+	collisionbox = {-0.35,-1.0,-0.35, 0.35,0.8,0.35},
+	visual = "mesh",
+	mesh = "amcaw_character.b3d",
+	textures = {
+		{"amcaw_evilscientist.png"},
+	},
+	visual_size = {x=1, y=1},
+	makes_footstep_sound = true,
+	sounds = {
+		random = "amcaw_evillaugh",
+		damage = "amcaw_evilhurt",
+		--attack = "abc",
+		--death = "abc",
+	},
+	walk_velocity = 1,
+	run_velocity = 1.5,
+	jump = true,
+	floats = 1,
+	view_range = 10,
+	drops = {
+		{name = "amcaw:pork_cooked",
+		chance = 2, min = 0, max = 1,},
+	},
+	water_damage = 0,
+	lava_damage = 1,
+	light_damage = 0,
+	animation = {
+		speed_normal = 10,		speed_run = 15,
+		stand_start = 0,		stand_end = 79,
+		walk_start = 168,		walk_end = 188,
+		run_start = 168,		run_end = 188,
+--		punch_start = 168,		punch_end = 188,
+	},
+})
+
+mobs:register_egg("amcaw:aaevilscientist", "evilscientist", "amcaw_evilscience_inv.png", 0)
 
 --###################
 --################### INVISIBLEMAN
@@ -1530,166 +2312,6 @@ mobs:register_mob("amcaw:aakid", {
 mobs:register_egg("amcaw:aakid", "kid", "amcaw_kid_inv.png", 0)
 
 --###################
---################### LAWYER
---###################
-
---http://morecreepsandweirdos.wikia.com/wiki/Lawyer_From_Hell
-        
-mobs:register_mob("amcaw:aaalawyer", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1,
-	collisionbox = {-0.4, -0.01, -0.4, 0.4, 2.1, 0.4},
-	visual = "mesh",
-	mesh = "amcaw_lawyer.b3d",
-    rotate = 180,
-	textures = {
-		{"amcaw_lawyerfromhell.png"},
-	},
-	visual_size = {x=4, y=4},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_lawyer",
-		damage = "amcaw_lawyermoneyhit",
-		attack = "amcaw_lawyerhurt",
-        --many more lawyer sounds
-		death = "amcaw_lawyerdeath",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	--drops = {
-		--{name = "default:coal",
-		--chance = 2, min = 0, max = 1,},
-	--},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaalawyer", "lawyer", "amcaw_lawyer_inv.png", 0)
-
---###################
---################### LOLIMAN
---###################
-
---http://morecreepsandweirdos.wikia.com/wiki/Lolliman
-        
-mobs:register_mob("amcaw:aaaloliman", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1,
-	collisionbox = {-0.6, -0.01, -0.6, 0.6, 2.8, 0.6},
-    rotate = 180,
-	visual = "mesh",
-	mesh = "amcaw_loliman.b3d",
-	textures = {
-		{"amcaw_loliman.png"},
-	},
-	visual_size = {x=4, y=4},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_lolliman",
-		damage = "amcaw_lollimanhurt",
-		--attack = "abc",
-		death = "amcaw_lollimandeath",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaaloliman", "loliman", "amcaw_loliman_inv.png", 0)
-
---###################
---################### MANDOG
---###################
-
---http://morecreepsandweirdos.wikia.com/wiki/ManDog
-        
-mobs:register_mob("amcaw:aaamandog", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.5,
-	collisionbox = {-0.7, -0.01, -0.7, 0.7, 2.3, 0.7},
-	visual = "mesh",
-	mesh = "amcaw_mandog.b3d",
-    rotate = 180,
-	textures = {
-		{"amcaw_mandog.png"},
-	},
-	visual_size = {x=4, y=4},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_mandog",
-		damage = "amcaw_mandoghurt",
-		--attack = "abc",
-		death = "amcaw_mandogdeath",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "bones:bones",
-		chance = 2, min = 0, max = 1,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaamandog", "mandog", "amcaw_mandog_inv.png", 0)
-
---###################
 --################### MUMMY
 --###################
 
@@ -1792,159 +2414,6 @@ mobs:register_mob("amcaw:aanonswimmer", {
 })
 
 mobs:register_egg("amcaw:aanonswimmer", "nonswimmer", "amcaw_nonswimmer_inv.png", 0)
-
---###################
---################### OLDLADY
---###################
-
-mobs:register_mob("amcaw:aaaoldlady", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1,
-	collisionbox = {-0.5, -0.01, -0.5, 0.5, 1.7, 0.5},
-    rotate = 180,
-	visual = "mesh",
-	mesh = "amcaw_oldlady.b3d",
-	textures = {
-		{"amcaw_oldlady.png"},
-	},
-	visual_size = {x=4, y=4},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_old",
-		damage = "amcaw_oldhurt",
-		--attack = "abc",
-		death = "amcaw_olddeath",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "default:pork_raw",
-		chance = 2, min = 0, max = 1,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaaoldlady", "oldlady", "amcaw_oldlady_inv.png", 0)
-
---###################
---################### PONIE
---###################
-
-mobs:register_mob("amcaw:aaaponie", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.7,
-	collisionbox = {-1, -0.01, -1, 1, 1.8, 1},
-	visual = "mesh",
-	mesh = "amcaw_ponie.b3d",
-	rotate = 180,
-    textures = {{"amcaw_pony01.png"}, {"amcaw_pony02.png"}, {"amcaw_pony03.png"}, {"amcaw_pony04.png"},{"amcaw_pony05.png"}, {"amcaw_pony06.png"}, {"amcaw_pony07.png"}, {"amcaw_pony08.png"}, {"amcaw_pony09.png"}, {"amcaw_ponybaby.png"}},
-	visual_size = {x=5, y=5},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_pony",
-		--damage = "abc",
-		attack = "amcaw_ponyattack",
-		death = "amcaw_ponydeath",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaaponie", "ponie", "amcaw_ponie_inv.png", 0)
-
---###################
---################### PONYGIRL
---###################
-
---http://morecreepsandweirdos.wikia.com/wiki/Pony_Girl
-        
-mobs:register_mob("amcaw:aaaponygirl", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1,
-	collisionbox = {-0.5, -0.01, -0.5, 0.5, 1.75, 0.5},
-    rotate = 180,
-    visual_size = {x=4, y=4},
-	visual = "mesh",
-	mesh = "amcaw_ponygirl.b3d",
-	textures = {
-		{"amcaw_ponygirl.png"},
-	},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_ponygirlcell",
-		damage = "amcaw_ponygirlhurt",
-		--attack = "abc",
-		death = "amcaw_ponygirldeath",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	--drops = {
-		--{name = "default:pork_raw",
-		--chance = 2, min = 0, max = 1,},
-	--},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaaponygirl", "ponygirl", "amcaw_ponygirl_inv.png", 0)
 
 --###################
 --################### PREACHER
@@ -2059,424 +2528,6 @@ mobs:register_mob("amcaw:aaprisoner", {
 mobs:register_egg("amcaw:aaprisoner", "prisoner", "amcaw_prisoner_inv.png", 0)
 
 --###################
---################### RAGINGBULL
---###################
-
-mobs:register_mob("amcaw:aaaragingbull", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 3,
-	collisionbox = {-2, -0.01, -2, 2, 2.3, 2},
-	visual = "mesh",
-	mesh = "amcaw_ragingbull.b3d",
-	rotate = 180,
-	textures = {
-		{"amcaw_ragingbull.png"},
-	},
-	visual_size = {x=8, y=8},
-	makes_footstep_sound = true,
-	sounds = {
-		--random = "abc",
-		--damage = "abc",
-		--attack = "abc",
-		--death = "abc",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaaragingbull", "ragingbull", "amcaw_ragingbull_inv.png", 0)
-
---###################
---################### RATMAN
---###################
-
---http://morecreepsandweirdos.wikia.com/wiki/RatMan
-        
-mobs:register_mob("amcaw:aaaratman", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.7,
-	collisionbox = {-1.1, -0.01, -1.1, 1.1, 2.2, 1.1},
-	visual = "mesh",
-	mesh = "amcaw_ratman.b3d",
-    rotate = 180,
-	textures = {
-		{"amcaw_ratman.png"},
-	},
-	visual_size = {x=4, y=4},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_ratman",
-		damage = "amcaw_ratmanhurt",
-		attack = "amcaw_ratmanscratch",
-		--death = "abc",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "default:pork_raw",
-		chance = 2, min = 0, max = 1,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-   
-mobs:register_egg("amcaw:aaaratman", "ratman", "amcaw_ratman_inv.png", 0)
-
---###################
---################### ROBOTTED
---###################
-
---http://morecreepsandweirdos.wikia.com/wiki/Robot_Ted
-        
-mobs:register_mob("amcaw:aaarobotted", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.3,
-	collisionbox = {-0.9, -0.01, -0.9, 0.9, 2.9, 0.9},
-	visual = "mesh",
-	mesh = "amcaw_robotted.b3d",
-	rotate = 180,
-    attacks_monsters = "amcaw:aaarobottod",
-    attack_specific = {"player", "amcaw:aaarobottod"},
-	textures = {
-		{"amcaw_robotted.png"},
-	},
-	visual_size = {x=7, y=7},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_tedinsult",
-		damage = "amcaw_robothurt",
-		--attack = "abc",
-		death = "amcaw_teddead",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:b16k_ram",
-		chance = 1, min = 4, max = 4,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaarobotted", "robotted", "amcaw_robotted_inv.png", 0)
-
---###################
---################### ROBOTTOD
---###################
-
---http://morecreepsandweirdos.wikia.com/wiki/Robot_Todd
-        
-mobs:register_mob("amcaw:aaarobottod", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.3,
-	collisionbox = {-0.8, -0.01, -0.8, 0.8, 2.9, 0.8},
-	visual = "mesh",
-	mesh = "amcaw_robottod.b3d",
-	rotate = 180,
-    attacks_monsters = "amcaw:aaarobotted",
-    attack_specific = {"player", "amcaw:aaarobotted"},
-	textures = {
-		{"amcaw_robottod.png"},
-	},
-	visual_size = {x=7, y=7},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_toddinsult",
-		damage = "amcaw_robothurt",
-		--attack = "abc",
-		death = "amcaw_todddead",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 0,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:battery",
-		chance = 2, min = 1, max = 1,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaarobottod", "robottod", "amcaw_robottod_inv.png", 0)
-
---###################
---################### ROCKETGIRAFE
---###################
-
---http://morecreepsandweirdos.wikia.com/wiki/Rocket_Giraffe
-        
-mobs:register_mob("amcaw:aaarocketgirafe", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 2,
-	collisionbox = {-1.2, -0.01, -1.2, 1.2, 3.3, 1.2},
-	visual = "mesh",
-	mesh = "amcaw_rocketgirafe.b3d",
-	rotate = 180,
-	textures = {
-		{"amcaw_rocketgirafe.png"},
-	},
-	visual_size = {x=5, y=5},
-	makes_footstep_sound = true,
-	sounds = {
-		--random = "abc",
-		--damage = "abc",
-		--attack = "abc",
-		--death = "abc",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaarocketgirafe", "rocketgirafe", "amcaw_rocketgirafe_inv.png", 0)
-
---###################
---################### ROCK MONSTER
---###################
-
-mobs:register_mob("amcaw:aaarockmonster", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.7,
-	collisionbox = {-1.3, -0.01, -1.3, 1.3, 3.7, 1.3},
-	visual = "mesh",
-	mesh = "amcaw_rockmonster.b3d",
-	rotate = 180,
-	textures = {
-		{"amcaw_rockmonster.png"},
-	},
-	visual_size = {x=5, y=5},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_rockmonster",
-		damage = "amcaw_rockmonsterhurt",
-		--attack = "abc",
-		death = "amcaw_rockmonsterdeath",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 0,
-	view_range = 10,
-	drops = {
-		{name = "default:cobble",
-		chance = 2, min = 0, max = 12,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 25,		speed_run = 30,
-		stand_start = 0,		stand_end = 80,
-		walk_start = 80,		walk_end = 120,
-		run_start = 80,		run_end = 120,
-		punch_start = 120,		punch_end = 134,
-	},
-})
-
-mobs:register_egg("amcaw:aaarockmonster", "rockmonster", "amcaw_rockmonster_inv.png", 0)
-
---###################
---################### SNEAKY SAL
---###################
-
-mobs:register_mob("amcaw:aaasneaky_sal", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.8,
-	collisionbox = {-1.3, -0.01, -1.3, 1.3, 2.8, 1.3},
-	visual = "mesh",
-	mesh = "amcaw_sneaky_sal.b3d",
-	rotate = 180,
-	textures = {
-		{"amcaw_sneaky_sal.png"},
-	},
-	visual_size = {x=8, y=8},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_salgreeting",
-		damage = "amcaw_salhurt",
-		--attack = "abc",
-		death = "amcaw_saldead",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaasneaky_sal", "sneaky sal", "amcaw_sneaky_sal_inv.png", 0)
-
---###################
---################### SNOWDEVIL
---###################
-
-mobs:register_mob("amcaw:aaasnowdevil", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.6,
-	collisionbox = {-1.1, -0.01, -1.1, 1.1, 1.5, 1.1},
-	visual = "mesh",
-	mesh = "amcaw_snowdevil.b3d",
-	rotate = 180,
-    textures = {{"amcaw_snowdevil.png"},{"amcaw_snowdevil2.png"}},
-	visual_size = {x=4, y=4},
-	makes_footstep_sound = true,
-	sounds = {
-		random = "amcaw_snowdevil",
-		damage = "amcaw_snowdevilhurt",
-		--attack = "abc",
-		death = "amcaw_snowdevildeath",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaasnowdevil", "snowdevil", "amcaw_snowdevil_inv.png", 0)
-
---###################
 --################### THIEF
 --###################
 
@@ -2525,54 +2576,3 @@ mobs:register_mob("amcaw:aathief", {
 })
 
 mobs:register_egg("amcaw:aathief", "thief", "amcaw_thief_inv.png", 0)
-
---###################
---################### ZEBRA
---###################
-
-mobs:register_mob("amcaw:aaazebra", {
-	type = "monster",
-	passive = false,
-	attack_type = "dogfight",
-	damage = 3,
-	hp_min = 12,
-	hp_max = 35,
-	armor = 150,
-    reach = 1.8,
-	collisionbox = {-1.3, -0.01, -1.3, 1.3, 1.9, 1.3},
-	visual = "mesh",
-	mesh = "amcaw_zebra.b3d",
-	rotate = 180,
-	textures = {
-		{"amcaw_zebra.png"},
-	},
-	visual_size = {x=5, y=5},
-	makes_footstep_sound = true,
-	sounds = {
-		--random = "abc",
-		--damage = "abc",
-		--attack = "abc",
-		--death = "abc",
-	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
-	floats = 1,
-	view_range = 10,
-	drops = {
-		{name = "amcaw:pork_raw",
-		chance = 2, min = 0, max = 2,},
-	},
-	water_damage = 0,
-	lava_damage = 1,
-	light_damage = 0,
-	animation = {
-		speed_normal = 10,		speed_run = 15,
-		stand_start = 0,		stand_end = 79,
-		walk_start = 168,		walk_end = 188,
-		run_start = 168,		run_end = 188,
---		punch_start = 168,		punch_end = 188,
-	},
-})
-
-mobs:register_egg("amcaw:aaazebra", "zebra", "amcaw_zebra_inv.png", 0)
