@@ -651,7 +651,7 @@ mobs:register_mob("amcaw:aaaflobmothership", {
 		{"amcaw_flobmothership.png"},
 	},
 	visual_size = {x=8, y=8},
-	makes_footstep_sound = true,
+	makes_footstep_sound = false,
 	sounds = {
 		random = "amcaw_floobship",
 		--damage = "abc",
@@ -690,12 +690,15 @@ mobs:register_egg("amcaw:aaaflobmothership", "flobmothership", "amcaw_flobmother
 mobs:register_mob("amcaw:aaafloob", {
 	type = "monster",
 	passive = false,
-	attack_type = "dogfight",
+	attack_type = "shoot",
+    shoot_interval = 0.5,
+	arrow = "amcaw:rayray",
+	shoot_offset = 0.5,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
 	armor = 150,
-    reach = 1.5,
+    --reach = 1.5,
 	collisionbox = {-0.9, -0.01, -0.9, 0.9, 2.5, 0.9},
     rotate = 180,
 	visual = "mesh",
@@ -730,6 +733,31 @@ mobs:register_mob("amcaw:aaafloob", {
 		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
+})
+
+-- raygun arrow (weapon)
+mobs:register_arrow("amcaw:rayray", {
+	visual = "sprite",
+	visual_size = {x = 0.5, y = 0.5},
+	textures = {"amcaw_rayray.png"},
+	velocity = 6,
+
+	hit_player = function(self, player)
+		player:punch(self.object, 1.0, {
+			full_punch_interval = 1.0,
+			damage_groups = {fleshy = 2},
+		}, nil)
+	end,
+
+	hit_mob = function(self, player)
+		player:punch(self.object, 1.0, {
+			full_punch_interval = 1.0,
+			damage_groups = {fleshy = 2},
+		}, nil)
+	end,
+
+	hit_node = function(self, pos, node)
+	end
 })
 
 mobs:register_egg("amcaw:aaafloob", "floob", "amcaw_a_floob_inv.png", 0)
@@ -865,7 +893,10 @@ mobs:register_egg("amcaw:aaagoogoat", "googoat", "amcaw_googoat_inv.png", 0)
 mobs:register_mob("amcaw:aaagrowbotgregg", {
 	type = "monster",
 	passive = false,
-	attack_type = "dogfight",
+	attack_type = "shoot",
+    shoot_interval = 0.5,
+	arrow = "amcaw:red",
+	shoot_offset = 0.5,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -906,6 +937,31 @@ mobs:register_mob("amcaw:aaagrowbotgregg", {
 		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
+})
+
+-- red arrow (weapon)
+mobs:register_arrow("amcaw:red", {
+	visual = "sprite",
+	visual_size = {x = 0.5, y = 0.5},
+	textures = {"amcaw_red.png"},
+	velocity = 6,
+
+	hit_player = function(self, player)
+		player:punch(self.object, 1.0, {
+			full_punch_interval = 1.0,
+			damage_groups = {fleshy = 2},
+		}, nil)
+	end,
+
+	hit_mob = function(self, player)
+		player:punch(self.object, 1.0, {
+			full_punch_interval = 1.0,
+			damage_groups = {fleshy = 2},
+		}, nil)
+	end,
+
+	hit_node = function(self, pos, node)
+	end
 })
 
 mobs:register_egg("amcaw:aaagrowbotgregg", "growbotgregg", "amcaw_growbotgregg_inv.png", 0)
@@ -1036,7 +1092,7 @@ mobs:register_mob("amcaw:aaahorsehead", {
 		{"amcaw_horsehead.png"},
 	},
 	visual_size = {x=4, y=4},
-	makes_footstep_sound = true,
+	makes_footstep_sound = false,
 	sounds = {
 		random = "amcaw_horsehead",
 		--damage = "abc",
@@ -1237,7 +1293,8 @@ mobs:register_mob("amcaw:aaaloliman", {
 	hp_max = 35,
 	armor = 150,
     reach = 1,
-	collisionbox = {-1, -0.01, -1, 1, 4.2, 1},
+    --collisionbox = {-0.7, -0.01, -0.7, 0.7, 4.1, 0.6}, when you change numbers to 0.7 loliman starts walking into you?
+	collisionbox = {-0.6, -0.01, -0.6, 0.6, 4, 0.6},
     rotate = 180,
 	visual = "mesh",
 	mesh = "amcaw_loliman.b3d",
@@ -1245,6 +1302,7 @@ mobs:register_mob("amcaw:aaaloliman", {
 		{"amcaw_loliman.png"},
 	},
 	visual_size = {x=6, y=6},
+    --visual_size = {x=4, y=4},
 	makes_footstep_sound = true,
 	sounds = {
 		random = "amcaw_lolliman",
@@ -1610,7 +1668,7 @@ mobs:register_mob("amcaw:aaarobotted", {
 		{"amcaw_robotted.png"},
 	},
 	visual_size = {x=7, y=7},
-	makes_footstep_sound = true,
+	makes_footstep_sound = false,
 	sounds = {
 		random = "amcaw_tedinsult",
 		damage = "amcaw_robothurt",
@@ -1710,7 +1768,8 @@ mobs:register_mob("amcaw:aaarocketgirafe", {
 	hp_max = 35,
 	armor = 150,
     reach = 2,
-	collisionbox = {-1.2, -0.01, -1.2, 1.2, 3.3, 1.2},
+	--collisionbox = {-1.2, -0.01, -1.2, 1.2, 3.3, 1.2},
+    collisionbox = {-1.2, -0.01, -1.2, 1.2, 3.3, 1.2},
 	visual = "mesh",
 	mesh = "amcaw_rocketgirafe.b3d",
 	rotate = 180,
@@ -1806,7 +1865,10 @@ mobs:register_egg("amcaw:aaarockmonster", "rockmonster", "amcaw_rockmonster_inv.
 mobs:register_mob("amcaw:aaasneaky_sal", {
 	type = "monster",
 	passive = false,
-	attack_type = "dogfight",
+	attack_type = "shoot",
+    shoot_interval = 0.5,
+	arrow = "amcaw:bullet2",
+	shoot_offset = 0.5,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1846,6 +1908,31 @@ mobs:register_mob("amcaw:aaasneaky_sal", {
 		run_start = 0,		run_end = 40,
 --		punch_start = 168,		punch_end = 188,
 	},
+})
+
+-- bullet arrow (weapon)
+mobs:register_arrow("amcaw:bullet2", {
+	visual = "sprite",
+	visual_size = {x = 2, y = 2},
+	textures = {"amcaw_bullet2.png"},
+	velocity = 6,
+
+	hit_player = function(self, player)
+		player:punch(self.object, 1.0, {
+			full_punch_interval = 1.0,
+			damage_groups = {fleshy = 2},
+		}, nil)
+	end,
+
+	hit_mob = function(self, player)
+		player:punch(self.object, 1.0, {
+			full_punch_interval = 1.0,
+			damage_groups = {fleshy = 2},
+		}, nil)
+	end,
+
+	hit_node = function(self, pos, node)
+	end
 })
 
 mobs:register_egg("amcaw:aaasneaky_sal", "sneaky sal", "amcaw_sneaky_sal_inv.png", 0)

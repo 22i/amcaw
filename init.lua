@@ -1,5 +1,3 @@
-
-
 local path = minetest.get_modpath("amcaw")
 
 -- items
@@ -10,6 +8,15 @@ dofile(path .. "/creeps.lua")
 
 -- spawning
 dofile(path .. "/spawning.lua")
+
+minetest.register_on_joinplayer(function(player)
+	minetest.chat_send_all("More Creeps and Weirdos 17.11.2016 version loaded.")
+    minetest.sound_play("amcaw_welcome")
+end)
+
+--minetest.register_on_joinplayer(function(player)
+	--minetest.chat_send_all("Feed lots of cake to Hunchback and he will stay loyal..")
+--end)
 
 -- good creeps
 --[[
