@@ -1,6 +1,26 @@
 --COLISIONBOX in minetest press f5 to see where you are looking at then put these wool collor nodes on the ground in direction of north/east/west... to make colisionbox editing easier
 --#1west-pink/#2down/#3south-blue/#4east-red/#5up/#6north-yelow
 
+local messages = {
+    "Drop a BubbleScum 100 blocks for the MERCILESS achievment.",
+    "Give a level 20 Guinea Pig a diamond to build a Hotel!",
+    "Give a diamond to a level 25 HotDog for a special reward!",
+    "Feed lots of cake to Hunchback and he will stay loyal.",
+    "You want money? Puch a Lawyer From Hell!",
+    "Dont let those stinky FLOOBs push you around!",
+    "Urintating Bums can help with landscaping. Try one today!",
+    "Power your HotDog with redstone for a fire attack!",
+    "Visit Sneaky Sal for those hard to find items.",
+    "The longer you ride a RocketPony, the more tame it will be."
+}
+
+minetest.register_on_joinplayer(function(player)
+	minetest.chat_send_all("More Creeps and Weirdos 18.11.2016 loaded.")
+    local num = math.random(10) -- set number to number of messages. help by minetest forum user pithy
+    minetest.chat_send_all(messages[num])
+    minetest.sound_play("amcaw_welcome")
+end)
+
 --###################
 --################### BIG BABY
 --###################
@@ -9,12 +29,18 @@ mobs:register_mob("amcaw:aaabigbaby", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --if pathfinding is set to false then bigbaby cant jump - when chasing you
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
 	armor = 150,
     reach = 2.5,
-    collisionbox = {-2, -0.01, -2, 2, 2.91, 2}, 
+    --if you put fifth 5th number higher than 2.3 and stepheight is lowwer than 1.2 then the creep starts glitching throught thi ground
+    collisionbox = {-2, -0.01, -2, 2, 2.91, 2},
+    --with this collisionbox, stepheight lower than 1.2 and pathfinding set to 1 bigbaby glitches into the ground also turns black
+    --collisionbox = {-2, -0.01, -2, 2, 2.91, 2},
 	visual = "mesh",
 	mesh = "amcaw_baby.b3d",
 	textures = {
@@ -28,8 +54,9 @@ mobs:register_mob("amcaw:aaabigbaby", {
 		damage = "amcaw_bigbabyhurt1",
 	},
 	walk_velocity = 1,
-	run_velocity = 1.5,
+	run_velocity = 2,
 	jump = true,
+    jump_height = 6,
 	floats = 0,
 	view_range = 10,
     --superbabyfood should be a bit rare maybe 1 every two kills
@@ -38,6 +65,7 @@ mobs:register_mob("amcaw:aaabigbaby", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -60,6 +88,8 @@ mobs:register_mob("amcaw:aaablorp", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -85,14 +115,18 @@ mobs:register_mob("amcaw:aaablorp", {
 	walk_velocity = 1,
 	run_velocity = 1.5,
 	jump = true,
+    jump_height = 3,
+    --jump_chance = 0,
+    --doesnt jump realy?
 	floats = 1,
-	view_range = 10,
+	view_range = 15,
     --drops more blorpcola after getting bigger - eating leaves
 	drops = {
 		{name = "amcaw:blorpcola",
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 4,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -115,6 +149,8 @@ mobs:register_mob("amcaw:aaabubblescum", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -139,13 +175,14 @@ mobs:register_mob("amcaw:aaabubblescum", {
 	run_velocity = 1.5,
 	jump = true,
 	floats = 1,
-	view_range = 10,
+	view_range = 15,
 	--bubblescum drops nothing
     --drops = {
 		--{name = "amcaw:pork_raw",
 		--chance = 2, min = 0, max = 2,},
 	--},
 	water_damage = 0,
+    fear_height = 4,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -170,6 +207,8 @@ mobs:register_mob("amcaw:aaacamel", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -198,6 +237,7 @@ mobs:register_mob("amcaw:aaacamel", {
 		--chance = 2, min = 0, max = 2,},
 	--},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -219,6 +259,8 @@ mobs:register_mob("amcaw:aaacastle_king", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -251,6 +293,7 @@ mobs:register_mob("amcaw:aaacastle_king", {
 		chance = 5, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -272,6 +315,8 @@ mobs:register_mob("amcaw:aaacastle_critter", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -303,6 +348,7 @@ mobs:register_mob("amcaw:aaacastle_critter", {
 		chance = 4, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -324,6 +370,8 @@ mobs:register_mob("amcaw:aaacastle_guard", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -353,6 +401,7 @@ mobs:register_mob("amcaw:aaacastle_guard", {
 	},
 	water_damage = 0,
 	lava_damage = 1,
+    fear_height = 6,
 	light_damage = 0,
 	animation = {
 		speed_normal = 25,		speed_run = 30,
@@ -373,6 +422,8 @@ mobs:register_mob("amcaw:aaacavelady", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -403,6 +454,7 @@ mobs:register_mob("amcaw:aaacavelady", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -424,6 +476,8 @@ mobs:register_mob("amcaw:aaacaveman", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -454,6 +508,7 @@ mobs:register_mob("amcaw:aaacaveman", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -476,6 +531,8 @@ mobs:register_mob("amcaw:aaadesertlizard", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -505,6 +562,7 @@ mobs:register_mob("amcaw:aaadesertlizard", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -528,6 +586,8 @@ mobs:register_mob("amcaw:aaadigibug", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -564,6 +624,7 @@ mobs:register_mob("amcaw:aaadigibug", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -585,6 +646,8 @@ mobs:register_mob("amcaw:aaadiscomole", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -615,6 +678,7 @@ mobs:register_mob("amcaw:aaadiscomole", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -658,9 +722,9 @@ mobs:register_mob("amcaw:aaaflobmothership", {
 		attack = "amcaw_floobshipatk",
 		death = "amcaw_floobshipexplode",
 	},
-	walk_velocity = 1,
-	run_velocity = 1.5,
-	jump = true,
+	walk_velocity = 0.00000001,
+	run_velocity = 0.000000001,
+	jump = false,
 	floats = 1,
 	view_range = 10,
 	--drops = {
@@ -668,6 +732,7 @@ mobs:register_mob("amcaw:aaaflobmothership", {
 		--chance = 2, min = 0, max = 2,},
 	--},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -724,6 +789,7 @@ mobs:register_mob("amcaw:aaafloob", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -772,6 +838,8 @@ mobs:register_mob("amcaw:aaag", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -820,6 +888,7 @@ mobs:register_mob("amcaw:aaag", {
 		chance = 10, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -843,6 +912,8 @@ mobs:register_mob("amcaw:aaagoogoat", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -873,6 +944,7 @@ mobs:register_mob("amcaw:aaagoogoat", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -928,6 +1000,7 @@ mobs:register_mob("amcaw:aaagrowbotgregg", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -974,6 +1047,8 @@ mobs:register_mob("amcaw:aaaguineapig", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -983,9 +1058,6 @@ mobs:register_mob("amcaw:aaaguineapig", {
 	visual = "mesh",
 	mesh = "amcaw_guineapig.b3d",
 	rotate = 180,
-	textures = {
-		{"amcaw_guineapig.png"},
-	},
     textures = {{"amcaw_ggpig1.png"}, {"amcaw_ggpig2.png"}, {"amcaw_ggpig3.png"}, {"amcaw_ggpig4.png"}, {"amcaw_ggpig5.png"}, {"amcaw_ggpig6.png"}, {"amcaw_ggpig7.png"}, {"amcaw_ggpig8.png"}, {"amcaw_ggpig9.png"}, {"amcaw_ggpiga.png"}},
 	visual_size = {x=3, y=3},
 	makes_footstep_sound = true,
@@ -1005,6 +1077,7 @@ mobs:register_mob("amcaw:aaaguineapig", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1026,6 +1099,8 @@ mobs:register_mob("amcaw:aaahippo", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1056,6 +1131,7 @@ mobs:register_mob("amcaw:aaahippo", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1079,6 +1155,8 @@ mobs:register_mob("amcaw:aaahorsehead", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1109,6 +1187,7 @@ mobs:register_mob("amcaw:aaahorsehead", {
 		--chance = 2, min = 0, max = 2,},
 	--},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1130,6 +1209,8 @@ mobs:register_mob("amcaw:aaahotdog", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1158,6 +1239,7 @@ mobs:register_mob("amcaw:aaahotdog", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1181,6 +1263,8 @@ mobs:register_mob("amcaw:aaahunchback", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1211,6 +1295,7 @@ mobs:register_mob("amcaw:aaahunchback", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1234,6 +1319,8 @@ mobs:register_mob("amcaw:aaalawyer", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1265,6 +1352,7 @@ mobs:register_mob("amcaw:aaalawyer", {
 		--chance = 2, min = 0, max = 1,},
 	--},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1288,6 +1376,8 @@ mobs:register_mob("amcaw:aaaloliman", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1320,6 +1410,7 @@ mobs:register_mob("amcaw:aaaloliman", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1343,6 +1434,8 @@ mobs:register_mob("amcaw:aaamandog", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1373,6 +1466,7 @@ mobs:register_mob("amcaw:aaamandog", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1394,6 +1488,8 @@ mobs:register_mob("amcaw:aaaoldlady", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1424,6 +1520,7 @@ mobs:register_mob("amcaw:aaaoldlady", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1445,6 +1542,8 @@ mobs:register_mob("amcaw:aaaponie", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1473,6 +1572,7 @@ mobs:register_mob("amcaw:aaaponie", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1496,6 +1596,8 @@ mobs:register_mob("amcaw:aaaponygirl", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1526,6 +1628,7 @@ mobs:register_mob("amcaw:aaaponygirl", {
 		--chance = 2, min = 0, max = 1,},
 	--},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1547,6 +1650,8 @@ mobs:register_mob("amcaw:aaaragingbull", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1577,6 +1682,7 @@ mobs:register_mob("amcaw:aaaragingbull", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1600,6 +1706,8 @@ mobs:register_mob("amcaw:aaaratman", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1630,6 +1738,7 @@ mobs:register_mob("amcaw:aaaratman", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1653,6 +1762,8 @@ mobs:register_mob("amcaw:aaarobotted", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1685,6 +1796,7 @@ mobs:register_mob("amcaw:aaarobotted", {
 		chance = 1, min = 4, max = 4,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1708,6 +1820,8 @@ mobs:register_mob("amcaw:aaarobottod", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1740,6 +1854,7 @@ mobs:register_mob("amcaw:aaarobottod", {
 		chance = 2, min = 1, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1763,12 +1878,13 @@ mobs:register_mob("amcaw:aaarocketgirafe", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
 	armor = 150,
     reach = 2,
-	--collisionbox = {-1.2, -0.01, -1.2, 1.2, 3.3, 1.2},
     collisionbox = {-1.2, -0.01, -1.2, 1.2, 3.3, 1.2},
 	visual = "mesh",
 	mesh = "amcaw_rocketgirafe.b3d",
@@ -1794,6 +1910,7 @@ mobs:register_mob("amcaw:aaarocketgirafe", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1815,6 +1932,8 @@ mobs:register_mob("amcaw:aaarockmonster", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1845,6 +1964,7 @@ mobs:register_mob("amcaw:aaarockmonster", {
 		chance = 2, min = 0, max = 12,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1899,6 +2019,7 @@ mobs:register_mob("amcaw:aaasneaky_sal", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1945,6 +2066,8 @@ mobs:register_mob("amcaw:aaasnowdevil", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -1973,6 +2096,7 @@ mobs:register_mob("amcaw:aaasnowdevil", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -1994,6 +2118,8 @@ mobs:register_mob("amcaw:aaazebra", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    --pathfinding = true,
+    stepheight = 1.2,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2024,6 +2150,7 @@ mobs:register_mob("amcaw:aaazebra", {
 		chance = 2, min = 0, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2046,6 +2173,7 @@ mobs:register_mob("amcaw:aarmy_guy", {
     --is passive until provoked
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2078,6 +2206,7 @@ mobs:register_mob("amcaw:aarmy_guy", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2099,6 +2228,7 @@ mobs:register_mob("amcaw:aablacksoul", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 7,
 	hp_min = 30,
 	hp_max = 60,
@@ -2130,6 +2260,7 @@ mobs:register_mob("amcaw:aablacksoul", {
 		chance = 10, min = 1, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2152,6 +2283,7 @@ mobs:register_mob("amcaw:aabum", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2182,6 +2314,7 @@ mobs:register_mob("amcaw:aabum", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2203,6 +2336,7 @@ mobs:register_mob("amcaw:aaevilscientist", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2232,6 +2366,7 @@ mobs:register_mob("amcaw:aaevilscientist", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2255,6 +2390,7 @@ mobs:register_mob("amcaw:aainvisibleman", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2284,6 +2420,7 @@ mobs:register_mob("amcaw:aainvisibleman", {
 		chance = 2, min = 1, max = 2,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2305,6 +2442,7 @@ mobs:register_mob("amcaw:aajockey", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2334,6 +2472,7 @@ mobs:register_mob("amcaw:aajockey", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2355,6 +2494,7 @@ mobs:register_mob("amcaw:aakid", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2385,6 +2525,7 @@ mobs:register_mob("amcaw:aakid", {
 		chance = 2, min = 1, max = 5,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2408,6 +2549,7 @@ mobs:register_mob("amcaw:aamummy", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2437,6 +2579,7 @@ mobs:register_mob("amcaw:aamummy", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2460,6 +2603,7 @@ mobs:register_mob("amcaw:aanonswimmer", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2489,6 +2633,7 @@ mobs:register_mob("amcaw:aanonswimmer", {
 		--chance = 2, min = 0, max = 1,},
 	--},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2512,6 +2657,7 @@ mobs:register_mob("amcaw:aapreacher", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2551,6 +2697,7 @@ mobs:register_mob("amcaw:aapreacher", {
 		chance = 50, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2572,6 +2719,7 @@ mobs:register_mob("amcaw:aaprisoner", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2601,6 +2749,7 @@ mobs:register_mob("amcaw:aaprisoner", {
 		--chance = 2, min = 0, max = 1,},
 	--},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {
@@ -2622,6 +2771,7 @@ mobs:register_mob("amcaw:aathief", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
+    pathfinding = true,
 	damage = 3,
 	hp_min = 12,
 	hp_max = 35,
@@ -2651,6 +2801,7 @@ mobs:register_mob("amcaw:aathief", {
 		chance = 2, min = 0, max = 1,},
 	},
 	water_damage = 0,
+    fear_height = 6,
 	lava_damage = 1,
 	light_damage = 0,
 	animation = {

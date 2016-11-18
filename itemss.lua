@@ -18,6 +18,9 @@ minetest.register_craftitem(":amcaw:blorpcola", {
 	on_use = minetest.item_eat(8),
 })
 
+--no idea how to play sound with the healing
+--minetest.sound_play("amcaw_blorpcola")
+
 minetest.register_craftitem(":amcaw:pork_cooked", {
 	description = "Cooked Porkchop",
 	inventory_image = "amcaw_pork_cooked.png",
