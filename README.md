@@ -8,17 +8,14 @@ Creeps were mostly made by [freakstritch](http://www.minecraftforum.net/forums/m
 
 But these weirdo creeps should be everywhere thats why they are coming to Minetest.
 
-This mod is still far from complete. Feel free to contribute code, improve the models, suggest new creeps and features.
-
-Things to do:
--creep animation
--creep abilities
--item functions
-
 ###### depends on default & [mobs redo](https://github.com/tenplus1/mobs_redo)
 
-#### Links [blendmodels](https://github.com/hy8wGWme/More-creeps-and-weirdoes-blender-models) [forum](https://forum.minetest.net/viewtopic.php?f=9&t=15822)
+#### Links [blendmodels](https://github.com/22i/More-creeps-and-weirdoes-blender-models) [forum](https://forum.minetest.net/viewtopic.php?f=9&t=15822)
 
 #### Credits [origin](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1272354-1-2-5-morecreeps-weirdos-v2-62-slot-machines-old) , [website](http://morecreeps.com/) & [wiki](http://morecreepsandweirdos.wikia.com/wiki/MoreCreeps_and_Weirdos_Wiki)
 
-![Preview](http://i.imgur.com/ZKiEHIS.png)
+This mod is still far from complete. Feel free to contribute code, improve the models, suggest new creeps and features.
+
+Things to do: -creep animation -creep abilities -item functions
+
+<img src="http://imgur.com/6jQjyhm.png" width="300">
