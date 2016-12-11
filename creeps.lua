@@ -15,7 +15,7 @@ local messages = {
 }
 
 minetest.register_on_joinplayer(function(player)
-	minetest.chat_send_all("More Creeps and Weirdos 18.11.2016 loaded.")
+	--minetest.chat_send_all("More Creeps and Weirdos 11.12.2016 loaded.")
     local num = math.random(10) -- set number to number of messages. help by minetest forum user pithy
     minetest.chat_send_all(messages[num])
     minetest.sound_play("amcaw_welcome")
@@ -915,6 +915,7 @@ mobs:register_mob("amcaw:aaagoogoat", {
     --pathfinding = true,
     stepheight = 1.2,
 	damage = 3,
+    --drawtype = "liquid",
 	hp_min = 12,
 	hp_max = 35,
 	armor = 150,
