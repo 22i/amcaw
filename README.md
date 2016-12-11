@@ -20,21 +20,24 @@ Things to do: -creep abilities
 
 <img src="http://imgur.com/6jQjyhm.png" width="300"> [Big baby](http://morecreepsandweirdos.wikia.com/wiki/Big_Baby) when turned small using shrinkray can be put into a babyjar and placed into a nice home where he turns into a schlump giving various rewards. 
 
-<img src="http://imgur.com/VFw9Pe8.png" width="150"> [Blorp](http://morecreepsandweirdos.wikia.com/wiki/Blorp) grows bigger after eating tree leaves. Drops many blorpcola deppending on his size.
+<img src="http://imgur.com/VFw9Pe8.png" width="150"> [Blorp](http://morecreepsandweirdos.wikia.com/wiki/Blorp) grows bigger after eating tree leaves; the bigger the Blorp, the more BlorpCola is yielded upon death. Blorps will teminate other Blorps, BubbleScums and Rocket Giraffes nearby
 
 <img src="http://imgur.com/FgMLoDK.png" width="150"> [Bubblescum](http://morecreepsandweirdos.wikia.com/wiki/Bubblescum)
+The player can right-click on the BubbleScum to make it sit on the player's head; this is a way of transporting a BubbleScum to another location.
 
 <img src="http://imgur.com/SkYRgpN.png" width="150"> [Camel](http://morecreepsandweirdos.wikia.com/wiki/camel)
+Camels are tameable mobs that can be tamed with cookies. They are used for transportation if a Camel Jockey mounts on the Camel, the Camel will become hostile to the player.
 
-<img src="http://imgur.com/oOPH5XD.png" width="150"> [Castle critter](http://morecreepsandweirdos.wikia.com/wiki/castlecritter)
+<img src="http://imgur.com/oOPH5XD.png" width="150"> [Castle critter](http://morecreepsandweirdos.wikia.com/wiki/Castle_Critter)
 
-<img src="http://imgur.com/lmTlK1l.png" width="150"> [Castle guard](http://morecreepsandweirdos.wikia.com/wiki/castleguard)
+<img src="http://imgur.com/lmTlK1l.png" width="150"> [Castle guard](http://morecreepsandweirdos.wikia.com/wiki/Castle_Guard)
 
-<img src="http://imgur.com/OJN52qC.png" width="150"> [Castle king](http://morecreepsandweirdos.wikia.com/wiki/castleking)
+<img src="http://imgur.com/OJN52qC.png" width="150"> [Castle king](http://morecreepsandweirdos.wikia.com/wiki/Castle_King)
+only spawns in the Battle Castle. The Castle King is the mob to defeat to earn the mighty GemSword. You have to fight him with all five Castle Gems in your inventory. They can be found throughout the castle.
 
-<img src="http://imgur.com/QyJCwep.png" width="150"> [Cavelady](http://morecreepsandweirdos.wikia.com/wiki/cavelady)
+<img src="http://imgur.com/QyJCwep.png" width="150"> [Cavelady](http://morecreepsandweirdos.wikia.com/wiki/Cavelady)
 
-<img src="http://imgur.com/O5lid3h.png" width="150"> [Caveman](http://morecreepsandweirdos.wikia.com/wiki/caveman)
+<img src="http://imgur.com/O5lid3h.png" width="150"> [Caveman](http://morecreepsandweirdos.wikia.com/wiki/Caveman)
 
 <img src="http://imgur.com/4Gw3o5Z.png" width="150"> [Desert lizard](http://morecreepsandweirdos.wikia.com/wiki/desertlizard)
 
@@ -76,7 +79,7 @@ Things to do: -creep abilities
 
 <img src="http://imgur.com/2OO5Dmr.png" width="150"> [Raggingbull](http://morecreepsandweirdos.wikia.com/wiki/raggingbull)
 
-<img src=".http://imgur.com/JQ4rCWUpng" width="150"> [Ratman](http://morecreepsandweirdos.wikia.com/wiki/ratman)
+<img src="http://imgur.com/JQ4rCWU.png" width="150"> [Ratman](http://morecreepsandweirdos.wikia.com/wiki/ratman)
 
 <img src="http://imgur.com/ac7Ec7e.png" width="150"> [Robot Ted](http://morecreepsandweirdos.wikia.com/wiki/robotted)
 
