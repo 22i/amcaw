@@ -18,12 +18,14 @@ This mod is still far from complete. Feel free to contribute code, improve the m
 
 Things to do: -creep abilities
 
-<img src="http://imgur.com/6jQjyhm.png" width="300"> [Big baby](http://morecreepsandweirdos.wikia.com/wiki/Big_Baby)
+<img src="http://imgur.com/6jQjyhm.png" width="300">
 
+[Big baby](http://morecreepsandweirdos.wikia.com/wiki/Big_Baby)
 when turned small using shrinkray can be put into a babyjar and placed into a nice home where he turns into a schlump giving various rewards. 
 
-<img src="http://imgur.com/VFw9Pe8.png" width="150"> [Blorp](http://morecreepsandweirdos.wikia.com/wiki/Blorp)
+<img src="http://imgur.com/VFw9Pe8.png" width="150">
 
+[Blorp](http://morecreepsandweirdos.wikia.com/wiki/Blorp)
 grows bigger after eating tree leaves; the bigger the Blorp, the more BlorpCola is yielded upon death. Blorps will teminate other Blorps, BubbleScums and Rocket Giraffes nearby
 
 <img src="http://imgur.com/FgMLoDK.png" width="150"> [Bubblescum](http://morecreepsandweirdos.wikia.com/wiki/Bubblescum)
